@@ -1,4 +1,5 @@
-import styles from "./Header.module.scss";
+import "./Header.scss";
+import card from "../../assets/icons/Card.svg";
 
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
         <div className="header-main">
           <div className="nav">
             <div className="img-box">
-              <img src="../../assets/images/Logo.png" alt="" />
+              <img src={require("../../assets/images/Logo.png")} alt="" />
             </div>
             <ul className="menu">
               <li className="item item--active">Trang chủ</li>
@@ -17,7 +18,8 @@ function Header() {
           </div>
           <div className="features">
             <div className="img-box">
-              <img src="../../assets/icons/Card.svg" alt="" />
+              <img src={card} alt="" />
+              <div className="number">5</div>
             </div>
             <button className="primaryBtn">Tài khoản</button>
           </div>
@@ -26,3 +28,5 @@ function Header() {
     </header>
   );
 }
+
+export default Header;

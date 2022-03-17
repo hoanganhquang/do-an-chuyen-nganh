@@ -1,0 +1,59 @@
+@use "../../../styles/variables" as v;
+
+.hero {
+  margin-top: v.$nav-height;
+
+  .container {
+    .hero-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 520px;
+      gap: 0 30px;
+
+      .content {
+        max-width: 523px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px 0;
+
+        .title {
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+          font-size: 2.5rem;
+          line-height: 112%;
+          color: v.$black-text-color;
+        }
+
+        .search-form {
+          display: flex;
+
+          .input {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            width: 304px;
+          }
+
+          .primaryBtn {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            width: 166px;
+          }
+        }
+
+        .desc {
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 145%;
+          color: v.$grey-text-color1;
+        }
+      }
+
+      .hero-img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
