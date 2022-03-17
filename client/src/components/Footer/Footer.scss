@@ -1,44 +1,60 @@
+@use "../../styles/variables" as v;
+
 .container {
-  width: 1024;
-  left: 0px;
-  top: 980px;
-  margin-left: 50px;
-  position: relative;
+  .footer-main {
+    .solutions {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
 
-  .solutions {
-    height: 150px;
-    width: 1024;
+      .solution {
+        h5 {
+          font-family: "Roboto", sans-serif;
+          font-weight: 600;
+          font-size: 1.3rem;
+          line-height: 145%;
+          color: v.$black-text-color;
+          letter-spacing: -0.0033em;
+          margin-bottom: 15px;
+        }
 
-    .solution {
-      display: inline-block;
-      width: 256px;
-      vertical-align: top;
-      text-align: left;
-      ul {
-        list-style-type: none;
-      }
-      a {
-        font-size: 10px;
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 8px 0;
+
+          li {
+            a {
+              font-weight: 400;
+              font-size: 0.938rem;
+              line-height: 160%;
+              letter-spacing: -0.0033em;
+              color: v.$black-text-color1;
+            }
+          }
+        }
       }
     }
-  }
 
-  .copyright-and-social-media {
-    height: 50px;
-    left: 0px;
-    top: 275px;
-    border-radius: 0px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .copyright {
-    color: gray;
-    font-size: 10px;
-  }
-  .social-media-icon {
-    width: 120px;
-    height: 20px;
-    display: flex;
-    justify-content: space-between;
+    .copyright-and-social-media {
+      display: flex;
+      justify-content: space-between;
+
+      .copyright {
+        p {
+          font-weight: 400;
+          font-size: 0.938rem;
+          line-height: 160%;
+          /* or 160% */
+          color: v.$grey-text-color2;
+        }
+      }
+
+      .social-media-icon {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 15px;
+      }
+    }
   }
 }

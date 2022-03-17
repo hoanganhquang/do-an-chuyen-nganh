@@ -1,4 +1,3 @@
-import react from "react";
 import "../Footer/Footer.scss";
 import fb from "../../assets/icons/fb.svg";
 import basketball from "../../assets/icons/basketball.svg";
@@ -6,20 +5,20 @@ import linkedin from "../../assets/icons/linkedin.svg";
 import instagram from "../../assets/icons/instagram.svg";
 import twitter from "../../assets/icons/twitter.svg";
 
-class Footer extends react.Component {
-  render() {
-    return (
-      <footer>
-        <div className="container">
+function Footer() {
+  return (
+    <footer>
+      <div className="container">
+        <div className="footer-main">
           <div className="solutions">
             <div className="solution">
               <h5>Chính sách và điều khoản</h5>
               <ul>
                 <li>
-                  <a href=" ">Chính sách</a>
+                  <a href="">Chính sách</a>
                 </li>
                 <li>
-                  <a href=" ">Điều khoản</a>
+                  <a href="">Điều khoản</a>
                 </li>
               </ul>
             </div>
@@ -61,7 +60,7 @@ class Footer extends react.Component {
                   <a href=" ">Email</a>
                 </li>
                 <li>
-                  <a href=" ">Phon</a>
+                  <a href=" ">Phone</a>
                 </li>
               </ul>
             </div>
@@ -91,9 +90,9 @@ class Footer extends react.Component {
             </div>
           </div>
         </div>
-      </footer>
-    );
-  }
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
