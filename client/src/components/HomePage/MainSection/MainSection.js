@@ -1,5 +1,6 @@
 import "./MainSection.scss";
 import Category from "./Category/Category";
+import Product from "./Product/Product";
 
 function MainSection() {
   return (
@@ -7,6 +8,7 @@ function MainSection() {
       <div className="container">
         <div className="main-main">
           <Category />
+          <Product />
         </div>
       </div>
     </section>
