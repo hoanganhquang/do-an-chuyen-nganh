@@ -45,8 +45,9 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 300px);
-    gap: 0 19px;
+    gap: 30px 19px;
+    max-height: 1487px;
+    overflow-y: auto;
 
     .img-box {
       img {
