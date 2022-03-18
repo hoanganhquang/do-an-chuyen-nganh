@@ -1,9 +1,20 @@
 import "./Header.scss";
 import card from "../../assets/icons/Card.svg";
 
+import clsx from "clsx";
+import { useEffect, useState } from "react";
+
 function Header() {
+  const [headerScrollStyle, setHeaderScrollStyle] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setHeaderScrollStyle(window.scrollY > 200);
+    });
+  });
+
   return (
-    <header>
+    <header className={clsx({ scrollShow: headerScrollStyle })}>
       <div className="container">
         <div className="header-main">
           <div className="nav">
