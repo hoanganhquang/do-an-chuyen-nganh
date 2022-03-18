@@ -16,7 +16,7 @@ function MainSection() {
       <section className="intro">
         <div className="container">
           <div className="intro-main">
-            <div className="content">
+            <div className="content" data-aos="fade-right">
               <h1 className="title">We build apps and websites</h1>
               <p className="desc">
                 From multipurpose themes to niche templates, you’ll always find
@@ -28,7 +28,7 @@ function MainSection() {
               </div>
             </div>
 
-            <div className="img-box">
+            <div className="img-box" data-aos="fade-left">
               <img src={require("../../../assets/images/intro.jpg")} alt="" />
             </div>
           </div>

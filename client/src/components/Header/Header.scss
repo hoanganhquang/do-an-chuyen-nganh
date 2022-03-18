@@ -7,6 +7,7 @@ header {
   left: 0;
   transition: all 0.15s linear;
   background-color: v.$white-color;
+  z-index: 999;
 
   .container {
     .header-main {

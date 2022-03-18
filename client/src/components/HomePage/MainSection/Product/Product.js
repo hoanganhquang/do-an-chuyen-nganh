@@ -2,7 +2,7 @@ import "./Product.scss";
 
 function Product() {
   return (
-    <div className="products">
+    <div className="products" data-aos="zoom-in">
       <div className="products-header">
         <h1 className="title">Sản phẩm</h1>
       </div>

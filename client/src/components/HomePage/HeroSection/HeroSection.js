@@ -5,7 +5,7 @@ function HeroSection() {
     <section className="hero">
       <div className="container">
         <div className="hero-main">
-          <div className="content">
+          <div className="content" data-aos="fade-right">
             <h1 className="title">Chào Mừng Đến Với Cửa Hàng Đặc Sản Đà Lạt</h1>
 
             <div className="search-form">
@@ -18,7 +18,7 @@ function HeroSection() {
               Đà Lạt với các sản phẩm đa dạng phong phú
             </p>
           </div>
-          <div className="hero-img">
+          <div className="hero-img" data-aos="fade-left">
             <img src={require("../../../assets/images/hero-img.png")} alt="" />
           </div>
         </div>

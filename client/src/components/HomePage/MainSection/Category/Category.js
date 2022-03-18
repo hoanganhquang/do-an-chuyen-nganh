@@ -3,7 +3,7 @@ import "./Category.scss";
 
 function Category() {
   return (
-    <div className="category">
+    <div className="category" data-aos="fade-right">
       <div className="category-header">
         <p className="title">Loại sản phẩm</p>
       </div>
