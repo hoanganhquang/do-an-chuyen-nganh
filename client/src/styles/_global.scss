@@ -2,7 +2,7 @@
 
 html,
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
@@ -51,6 +51,7 @@ button {
 .secondaryStrokeBtn {
   background-color: v.$primary-color1;
   border: 1px solid v.$primary-color;
+  color: v.$primary-color;
 }
 
 .input {

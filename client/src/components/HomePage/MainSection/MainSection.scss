@@ -1,0 +1,13 @@
+@use "../../../styles/variables" as v;
+
+.main {
+  padding-top: 80px;
+
+  .container {
+    .main-main {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 0 19px;
+    }
+  }
+}
