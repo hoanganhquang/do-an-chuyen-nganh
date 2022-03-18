@@ -1,48 +1,28 @@
 @use "../../../../styles/variables" as v;
 
 .products {
-  .callout {
-    background: rgba(15, 175, 233, 0.1);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 31px;
+  .products-header {
+    .title {
+      color: v.$black-text-color1;
+      font-size: 1.9rem;
+      text-transform: capitalize;
+      position: relative;
 
-    .info {
-      display: flex;
-      gap: 0 12px;
-
-      .img-box {
-        width: 63px;
-        height: 40px;
-        background: rgba(15, 175, 233, 0.1);
+      &::after {
+        content: "";
+        position: absolute;
+        width: 90px;
+        height: 3px;
+        background-color: v.$primary-color;
+        bottom: -12px;
+        left: 2px;
         border-radius: 10px;
-        padding: 10px;
-      }
-
-      .content {
-        .title {
-          font-weight: 600;
-          font-size: 0.9rem;
-          line-height: 189%;
-          letter-spacing: -0.0058em;
-          color: v.$black-text-color1;
-        }
-
-        .desc {
-          font-weight: 400;
-          font-size: 0.7rem;
-          line-height: 160%;
-          letter-spacing: -0.0033em;
-          color: v.$grey-text-color;
-        }
       }
     }
   }
 
   .product-list {
-    margin-top: 20px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px 19px;

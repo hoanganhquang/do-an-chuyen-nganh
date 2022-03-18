@@ -1,51 +1,10 @@
 import "./Product.scss";
-import shield from "../../../../assets/icons/shield.svg";
-import help from "../../../../assets/icons/help.svg";
-import check from "../../../../assets/icons/check.svg";
 
 function Product() {
   return (
     <div className="products">
-      <div className="callout">
-        <div className="info">
-          <div className="img-box">
-            <img src={shield} alt="" />
-          </div>
-
-          <div className="content">
-            <h5 className="title">Security Assurance</h5>
-            <p className="desc">
-              Our theme architecture is designed for maximize security and
-              prevent malware, Dos Attack other.
-            </p>
-          </div>
-        </div>
-        <div className="info">
-          <div className="img-box">
-            <img src={help} alt="" />
-          </div>
-
-          <div className="content">
-            <h5 className="title"> Best Customer Support</h5>
-            <p className="desc">
-              Our theme architecture is designed for maximize security and
-              prevent malware, Dos Attack other.
-            </p>
-          </div>
-        </div>
-        <div className="info">
-          <div className="img-box">
-            <img src={check} alt="" />
-          </div>
-
-          <div className="content">
-            <h5 className="title">Security Assurance</h5>
-            <p className="desc">
-              Our theme architecture is designed for maximize security and
-              prevent malware, Dos Attack other.
-            </p>
-          </div>
-        </div>
+      <div className="products-header">
+        <h1 className="title">Sản phẩm</h1>
       </div>
 
       <div className="product-list">
