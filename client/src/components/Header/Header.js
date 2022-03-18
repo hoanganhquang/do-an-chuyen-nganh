@@ -9,7 +9,7 @@ function Header() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setHeaderScrollStyle(window.scrollY > 200);
+      setHeaderScrollStyle(window.scrollY > 150);
     });
   });
 
