@@ -1,12 +1,35 @@
 const mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 const UserSchema = new mongoose.Schema({
-  name: String,
+  name: {
+    type: String,
+    default: "",
+  },
   password: String,
-  address: String,
+  address: {
+    type: String,
+    default: "",
+  },
   email: String,
-  phone: String,
+  phone: {
+    type: String,
+    default: "",
+  },
 });
+
+UserSchema.pre("save", async function (next) {
+  if (!this.isModified("password")) return next();
+
+  this.password = await bcrypt.hash(this.password, saltRounds);
+
+  next();
+});
+
+UserSchema.methods.checkPassword = function (currentPassword, passwordCheck) {
+  return bcrypt.compare(passwordCheck, currentPassword);
+};
 
 const User = mongoose.model("user", UserSchema);
 
