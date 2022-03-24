@@ -4,6 +4,8 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 
 const AuthRoute = require("./routes/Auth.route");
+const CategoryRoute = require("./routes/Category.route");
+const ProductRoute = require("./routes/Product.route");
 
 const app = express();
 
@@ -14,5 +16,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api/v1/auth", AuthRoute);
+app.use("/api/v1/category", CategoryRoute);
+app.use("/api/v1/product", ProductRoute);
 
 module.exports = app;

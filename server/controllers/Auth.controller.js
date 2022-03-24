@@ -34,6 +34,15 @@ exports.signIn = async (req, res) => {
     });
 
     if (user === null) throw "Tài khoản không hợp lệ";
+
+    const checkPass = await user.checkPassword(
+      req.body.password,
+      user.password
+    );
+
+    if (!checkPass) throw "Tài khoản không hợp lệ";
+
+    createSendToken(user, 200, req, res);
   } catch (error) {
     res.json({
       status: "failure",
