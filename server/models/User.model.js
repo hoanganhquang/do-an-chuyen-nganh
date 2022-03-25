@@ -12,10 +12,18 @@ const UserSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
-  email: String,
+  email: {
+    type: String,
+    unique: true,
+  },
   phone: {
     type: String,
+    unique: true,
     default: "",
+  },
+  role: {
+    type: String,
+    default: "User",
   },
 });
 

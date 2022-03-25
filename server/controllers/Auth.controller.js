@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/User.model");
+const Card = require("../models/Card.model");
 
 const signToken = (id) => {
   return jwt.sign({ id }, process.env.jwt_key);
@@ -19,6 +20,11 @@ exports.signUp = async (req, res) => {
     const newUser = await User.create({
       email: req.body.email,
       password: req.body.password,
+    });
+
+    await Card.create({
+      user: newUser._id,
+      products: [],
     });
 
     createSendToken(newUser, 200, req, res);
@@ -43,6 +49,53 @@ exports.signIn = async (req, res) => {
     if (!checkPass) throw "Tài khoản không hợp lệ";
 
     createSendToken(user, 200, req, res);
+  } catch (error) {
+    res.json({
+      status: "failure",
+      message: error,
+    });
+  }
+};
+
+exports.protect = async (req, res, next) => {
+  try {
+    let token;
+
+    if (
+      req.headers.authorization &&
+      req.headers.authorization.startsWith("Bearer")
+    ) {
+      token = req.headers.authorization.split(" ")[1];
+    }
+
+    const tokenDecoded = jwt.verify(token, process.env.jwt_key);
+
+    const currentUser = await User.findById(tokenDecoded.id).select(
+      "-password"
+    );
+
+    req.user = currentUser;
+
+    next();
+  } catch (error) {
+    let message;
+
+    if (error.name === "CastError") {
+      message = "Không được cấp quyền";
+    }
+
+    res.json({
+      status: "failure",
+      message,
+    });
+  }
+};
+
+exports.restrict = async (req, res, next) => {
+  try {
+    if (req.user.role === "User") throw "Không được cấp quyền";
+
+    next();
   } catch (error) {
     res.json({
       status: "failure",

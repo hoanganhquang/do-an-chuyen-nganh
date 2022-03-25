@@ -60,3 +60,19 @@ exports.getAll = async (model, res) => {
     });
   }
 };
+
+exports.getOne = async (model, res, query) => {
+  try {
+    const data = await model.findOne(query);
+
+    res.json({
+      status: "success",
+      data,
+    });
+  } catch (error) {
+    res.json({
+      status: "failure",
+      message: "Không thành công",
+    });
+  }
+};
