@@ -3,9 +3,11 @@ const Order = require("../controllers/Order.controller");
 const AuthController = require("../controllers/Auth.controller");
 
 router.use(AuthController.protect);
-router.get("/", AuthController.restrict, Order.getAllOrder);
 router.post("/", Order.addOrder);
-router.delete("/:id", AuthController.restrict, Order.deleteOrder);
+
+router.use(AuthController.restrict);
+router.get("/", Order.getAllOrder);
 router.patch("/:id", Order.updateOrder);
+router.delete("/:id", Order.deleteOrder);
 
 module.exports = router;

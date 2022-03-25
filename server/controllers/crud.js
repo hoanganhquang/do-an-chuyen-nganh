@@ -32,7 +32,11 @@ exports.delete = async (model, req, res) => {
 
 exports.update = async (model, req, res) => {
   try {
-    await model.updateOne({ _id: req.params.id }, req.body);
+    if (req.user) {
+      await model.updateOne({ _id: req.user._id }, req.body);
+    } else {
+      await model.updateOne({ _id: req.params.id }, req.body);
+    }
 
     res.json({
       status: "success",
@@ -45,9 +49,15 @@ exports.update = async (model, req, res) => {
   }
 };
 
-exports.getAll = async (model, res) => {
+exports.getAll = async (model, req, res) => {
   try {
-    const data = await model.find();
+    let data;
+
+    if (req.user.role === "User") {
+      data = await model.findById(req.user._id);
+    } else {
+      data = await model.find();
+    }
 
     res.json({
       status: "success",

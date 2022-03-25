@@ -2,7 +2,7 @@ const Order = require("../models/Order.model");
 const crud = require("./crud");
 
 exports.getAllOrder = async (req, res) => {
-  await crud.getAll(Order, res);
+  await crud.getAll(Order, req, res);
 };
 
 exports.addOrder = async (req, res) => {
