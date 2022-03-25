@@ -1,8 +1,23 @@
 const mongoose = require("mongoose");
 
 const OrderSchema = new mongoose.Schema({
-  orderDate: Date,
+  orderDate: {
+    type: Date,
+    default: new Date(),
+  },
   total: Number,
+  status: String,
+  details: [
+    {
+      product: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "product",
+      },
+      quantity: {
+        type: Number,
+      },
+    },
+  ],
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "user",

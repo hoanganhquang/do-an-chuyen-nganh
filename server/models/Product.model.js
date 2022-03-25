@@ -12,6 +12,16 @@ const ProductSchema = new mongoose.Schema({
   },
 });
 
+ProductSchema.methods.checkQuantity = (amount) => {
+  if (this.quantityInStock < amount) return false;
+
+  return true;
+};
+
+ProductSchema.methods.reduceQuantity = (amount) => {
+  this.quantityInStock = this.quantityInStock - amount;
+};
+
 const Product = mongoose.model("product", ProductSchema);
 
 module.exports = Product;

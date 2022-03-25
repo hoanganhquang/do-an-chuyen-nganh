@@ -1,5 +1,7 @@
-exports.insert = async (model, req, res) => {
+exports.insert = async (model, req, res, err) => {
   try {
+    if (err) throw 0;
+
     await model.create(req.body);
 
     res.json({
