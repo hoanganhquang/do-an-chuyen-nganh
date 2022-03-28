@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Dâu tây",
+    "description": "Dâu tây Đà Lạt",
+    "price": 100000,
+    "quantityInStock": 50,
+    "image": "dau-tay-da-lat.png",
+    "category": "Trái cây"
+  },
+  {
+    "name": "Hồng giòn",
+    "description": "Hồng giòn Đà Lạt",
+    "price": 100000,
+    "quantityInStock": 50,
+    "image": "hong-gion.png",
+    "category": "Trái cây"
+  },
+  {
+    "name": "Mứt hoa hồng",
+    "description": "Mứt hoa hồng Đà Lạt",
+    "price": 200000,
+    "quantityInStock": 50,
+    "image": "mut-hoa-hong.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Mứt cà chua",
+    "description": "Mứt cà chua Đà Lạt",
+    "price": 200000,
+    "quantityInStock": 50,
+    "image": "mut-ca-chua.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Mứt khoai lang",
+    "description": "Mứt khoai lang Đà Lạt",
+    "price": 200000,
+    "quantityInStock": 50,
+    "image": "mut-khoai-lang.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Mứt dâu tây",
+    "description": "Mứt dâu tây Đà Lạt",
+    "price": 200000,
+    "quantityInStock": 50,
+    "image": "mut-dau-tay.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Mứt dâu tằm",
+    "description": "Mứt dâu tằm Đà Lạt",
+    "price": 200000,
+    "quantityInStock": 50,
+    "image": "mut-dau-tam.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Mứt mận",
+    "description": "Mứt mận Đà Lạt",
+    "price": 200000,
+    "quantityInStock": 50,
+    "image": "mut-man.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Mứt kiwi",
+    "description": "Mứt kiwi Đà Lạt",
+    "price": 200000,
+    "quantityInStock": 50,
+    "image": "mut-kiwi.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Bánh tráng nướng",
+    "description": "Bánh tráng nướng Đà Lạt",
+    "price": 50000,
+    "quantityInStock": 50,
+    "image": "banh-trang-nuong.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Nem nướng",
+    "description": "Nem nướng Đà Lạt",
+    "price": 50000,
+    "quantityInStock": 50,
+    "image": "nem-nuong.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Bánh canh",
+    "description": "Bánh canh Đà Lạt",
+    "price": 50000,
+    "quantityInStock": 50,
+    "image": "banh-canh.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Bánh mì xíu mại",
+    "description": "Bánh mì xíu mại Đà Lạt",
+    "price": 50000,
+    "quantityInStock": 50,
+    "image": "banh-mi-xiu-mai.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Ốc nhồi thịt",
+    "description": "Ốc nhồi thịt Đà Lạt",
+    "price": 50000,
+    "quantityInStock": 50,
+    "image": "oc-nhoi-thit.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Lẩu bò Ba Toa",
+    "description": "Lẩu bò Ba Toa Đà Lạt",
+    "price": 50000,
+    "quantityInStock": 50,
+    "image": "lau-ba-toa.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Rượu vang",
+    "description": "Rượu vang Đà Lạt",
+    "price": 500000,
+    "quantityInStock": 50,
+    "image": "ruou-vang.png",
+    "category": "Đồ uống"
+  },
+  {
+    "name": "Rượu cần",
+    "description": "Rượu cần Đà Lạt",
+    "price": 500000,
+    "quantityInStock": 50,
+    "image": "ruou-can.png",
+    "category": "Đồ uống"
+  },
+  {
+    "name": "Nước cốt dâu tằm",
+    "description": "Nước cốt dâu tằm Đà Lạt",
+    "price": 500000,
+    "quantityInStock": 50,
+    "image": "nuoc-cot-dau-tam.png",
+    "category": "Đồ uống"
+  },
+  {
+    "name": "Nước cốt dâu tây",
+    "description": "Nước cốt dâu tây Đà Lạt",
+    "price": 500000,
+    "quantityInStock": 50,
+    "image": "nuoc-cot-dau-tay.png",
+    "category": "Đồ uống"
+  },
+  {
+    "name": "Cà phê Cầu Đất",
+    "description": "Cà phê Cầu Đất Đà Lạt",
+    "price": 500000,
+    "quantityInStock": 50,
+    "image": "cf-cau-dat.png",
+    "category": "Đồ uống"
+  },
+  {
+    "name": "Trà Bảo Lộc",
+    "description": "Trà Bảo Lộc Đà Lạt",
+    "price": 500000,
+    "quantityInStock": 50,
+    "image": "tra-bao-loc.png",
+    "category": "Đồ uống"
+  },
+  {
+    "name": "Mít sấy",
+    "description": "Mít sấy Đà Lạt",
+    "price": 300000,
+    "quantityInStock": 50,
+    "image": "mit-say.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Rau củ sấy",
+    "description": "Rau củ sấy Đà Lạt",
+    "price": 300000,
+    "quantityInStock": 50,
+    "image": "rau-cu-say.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Thổ cẩm",
+    "description": "Thổ cẩm Đà Lạt",
+    "price": 1000000,
+    "quantityInStock": 50,
+    "image": "tho-cam.png",
+    "category": "Lưu niệm, thủ công"
+  },
+  {
+    "name": "Tranh thêu tay",
+    "description": "Tranh thêu tay Đà Lạt",
+    "price": 1000000,
+    "quantityInStock": 50,
+    "image": "tranh-theu-tay.png",
+    "category": "Lưu niệm, thủ công"
+  },
+  {
+    "name": "Tranh đính đá",
+    "description": "Tranh đính đá Đà Lạt",
+    "price": 1000000,
+    "quantityInStock": 50,
+    "image": "tranh-dinh-da.png",
+    "category": "Lưu niệm, thủ công"
+  },
+  {
+    "name": "Tranh khắc gỗ",
+    "description": "Tranh khắc gỗ Đà Lạt",
+    "price": 1000000,
+    "quantityInStock": 50,
+    "image": "tranh-khac-go.png",
+    "category": "Lưu niệm, thủ công"
+  }
+]

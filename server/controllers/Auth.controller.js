@@ -94,7 +94,7 @@ exports.protect = async (req, res, next) => {
 
 exports.restrict = async (req, res, next) => {
   try {
-    if (req.user.role === "User") throw "Không được cấp quyền";
+    if (req.user.role.toLowerCase() === "user") throw "Không được cấp quyền";
 
     next();
   } catch (error) {
