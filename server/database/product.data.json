@@ -5,7 +5,7 @@
     "price": 100000,
     "quantityInStock": 50,
     "image": "dau-tay-da-lat.png",
-    "category": "Trái cây"
+    "category": "62417468a4e565283e38feb6"
   },
   {
     "name": "Hồng giòn",
@@ -13,7 +13,7 @@
     "price": 100000,
     "quantityInStock": 50,
     "image": "hong-gion.png",
-    "category": "Trái cây"
+    "category": "62417468a4e565283e38feb6"
   },
   {
     "name": "Mứt hoa hồng",
@@ -21,7 +21,7 @@
     "price": 200000,
     "quantityInStock": 50,
     "image": "mut-hoa-hong.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Mứt cà chua",
@@ -29,7 +29,7 @@
     "price": 200000,
     "quantityInStock": 50,
     "image": "mut-ca-chua.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Mứt khoai lang",
@@ -37,7 +37,7 @@
     "price": 200000,
     "quantityInStock": 50,
     "image": "mut-khoai-lang.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Mứt dâu tây",
@@ -45,7 +45,7 @@
     "price": 200000,
     "quantityInStock": 50,
     "image": "mut-dau-tay.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Mứt dâu tằm",
@@ -53,7 +53,7 @@
     "price": 200000,
     "quantityInStock": 50,
     "image": "mut-dau-tam.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Mứt mận",
@@ -61,7 +61,7 @@
     "price": 200000,
     "quantityInStock": 50,
     "image": "mut-man.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Mứt kiwi",
@@ -69,7 +69,7 @@
     "price": 200000,
     "quantityInStock": 50,
     "image": "mut-kiwi.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Bánh tráng nướng",
@@ -77,7 +77,7 @@
     "price": 50000,
     "quantityInStock": 50,
     "image": "banh-trang-nuong.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Nem nướng",
@@ -85,7 +85,7 @@
     "price": 50000,
     "quantityInStock": 50,
     "image": "nem-nuong.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Bánh canh",
@@ -93,7 +93,7 @@
     "price": 50000,
     "quantityInStock": 50,
     "image": "banh-canh.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Bánh mì xíu mại",
@@ -101,7 +101,7 @@
     "price": 50000,
     "quantityInStock": 50,
     "image": "banh-mi-xiu-mai.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Ốc nhồi thịt",
@@ -109,7 +109,7 @@
     "price": 50000,
     "quantityInStock": 50,
     "image": "oc-nhoi-thit.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Lẩu bò Ba Toa",
@@ -117,7 +117,7 @@
     "price": 50000,
     "quantityInStock": 50,
     "image": "lau-ba-toa.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Canh Atiso hầm chân giò heo",
@@ -125,7 +125,7 @@
     "price": 50000,
     "quantityInStock": 50,
     "image": "canh-atiso.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Bánh căn",
@@ -133,7 +133,7 @@
     "price": 50000,
     "quantityInStock": 50,
     "image": "banh-can.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Bánh ướt lòng gà",
@@ -141,7 +141,7 @@
     "price": 50000,
     "quantityInStock": 50,
     "image": "banh-uot.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Kem bơ",
@@ -149,7 +149,7 @@
     "price": 50000,
     "quantityInStock": 50,
     "image": "kem-bo.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Rượu vang",
@@ -157,7 +157,7 @@
     "price": 500000,
     "quantityInStock": 50,
     "image": "ruou-vang.png",
-    "category": "Đồ uống"
+    "category": "62417468a4e565283e38feb7"
   },
   {
     "name": "Rượu cần",
@@ -165,7 +165,7 @@
     "price": 500000,
     "quantityInStock": 50,
     "image": "ruou-can.png",
-    "category": "Đồ uống"
+    "category": "62417468a4e565283e38feb7"
   },
   {
     "name": "Nước cốt dâu tằm",
@@ -173,7 +173,7 @@
     "price": 500000,
     "quantityInStock": 50,
     "image": "nuoc-cot-dau-tam.png",
-    "category": "Đồ uống"
+    "category": "62417468a4e565283e38feb7"
   },
   {
     "name": "Nước cốt dâu tây",
@@ -181,7 +181,7 @@
     "price": 500000,
     "quantityInStock": 50,
     "image": "nuoc-cot-dau-tay.png",
-    "category": "Đồ uống"
+    "category": "62417468a4e565283e38feb7"
   },
   {
     "name": "Cà phê Cầu Đất",
@@ -189,7 +189,7 @@
     "price": 500000,
     "quantityInStock": 50,
     "image": "cf-cau-dat.png",
-    "category": "Đồ uống"
+    "category": "62417468a4e565283e38feb7"
   },
   {
     "name": "Trà Bảo Lộc",
@@ -197,7 +197,7 @@
     "price": 500000,
     "quantityInStock": 50,
     "image": "tra-bao-loc.png",
-    "category": "Đồ uống"
+    "category": "62417468a4e565283e38feb7"
   },
   {
     "name": "Mít sấy",
@@ -205,7 +205,7 @@
     "price": 300000,
     "quantityInStock": 50,
     "image": "mit-say.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Rau củ sấy",
@@ -213,7 +213,7 @@
     "price": 300000,
     "quantityInStock": 50,
     "image": "rau-cu-say.png",
-    "category": "Đồ ăn"
+    "category": "62417468a4e565283e38feb8"
   },
   {
     "name": "Thổ cẩm",
@@ -221,7 +221,7 @@
     "price": 1000000,
     "quantityInStock": 50,
     "image": "tho-cam.png",
-    "category": "Lưu niệm, thủ công"
+    "category": "62417468a4e565283e38feb9"
   },
   {
     "name": "Tranh thêu tay",
@@ -229,7 +229,7 @@
     "price": 1000000,
     "quantityInStock": 50,
     "image": "tranh-theu-tay.png",
-    "category": "Lưu niệm, thủ công"
+    "category": "62417468a4e565283e38feb9"
   },
   {
     "name": "Tranh đính đá",
@@ -237,7 +237,7 @@
     "price": 1000000,
     "quantityInStock": 50,
     "image": "tranh-dinh-da.png",
-    "category": "Lưu niệm, thủ công"
+    "category": "62417468a4e565283e38feb9"
   },
   {
     "name": "Tranh khắc gỗ",
@@ -245,6 +245,6 @@
     "price": 1000000,
     "quantityInStock": 50,
     "image": "tranh-khac-go.png",
-    "category": "Lưu niệm, thủ công"
+    "category": "62417468a4e565283e38feb9"
   }
 ]
