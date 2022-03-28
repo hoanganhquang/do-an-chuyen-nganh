@@ -120,6 +120,38 @@
     "category": "Đồ ăn"
   },
   {
+    "name": "Canh Atiso hầm chân giò heo",
+    "description": "Canh Atiso hầm chân giò heo Đà Lạt",
+    "price": 50000,
+    "quantityInStock": 50,
+    "image": "canh-atiso.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Bánh căn",
+    "description": "Bánh căn Đà Lạt",
+    "price": 50000,
+    "quantityInStock": 50,
+    "image": "banh-can.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Bánh ướt lòng gà",
+    "description": "Bánh ướt lòng gà Đà Lạt",
+    "price": 50000,
+    "quantityInStock": 50,
+    "image": "banh-uot.png",
+    "category": "Đồ ăn"
+  },
+  {
+    "name": "Kem bơ",
+    "description": "Kem bơ Đà Lạt",
+    "price": 50000,
+    "quantityInStock": 50,
+    "image": "kem-bo.png",
+    "category": "Đồ ăn"
+  },
+  {
     "name": "Rượu vang",
     "description": "Rượu vang Đà Lạt",
     "price": 500000,
