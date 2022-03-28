@@ -10,8 +10,8 @@ exports.addOrder = async (req, res) => {
   const products = [...req.body.details];
 
   const checkQuantity = products.every(async (value, i) => {
-    const product = await Product.findById(value.product);
-    return product.checkQuantity(value.quantity);
+    const product = await Product.findById(value._id);
+    return product.checkQuantity(product, value.quantity);
   });
 
   let err = false;
@@ -19,10 +19,12 @@ exports.addOrder = async (req, res) => {
     err = true;
   } else {
     products.forEach(async (value, i) => {
-      const product = await Product.findById(value.product);
-      product.reduceQuantity(value.quantity);
+      const product = await Product.findById(value._id);
+      product.reduceQuantity(product, value.quantity);
     });
   }
+
+  req.body.user = req.user._id;
 
   await crud.insert(Order, req, res, err);
 };

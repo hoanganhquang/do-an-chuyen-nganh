@@ -12,14 +12,15 @@ const ProductSchema = new mongoose.Schema({
   },
 });
 
-ProductSchema.methods.checkQuantity = (amount) => {
-  if (this.quantityInStock < amount) return false;
+ProductSchema.methods.checkQuantity = (product, amount) => {
+  if (product.quantityInStock < amount) return false;
 
   return true;
 };
 
-ProductSchema.methods.reduceQuantity = (amount) => {
-  this.quantityInStock = this.quantityInStock - amount;
+ProductSchema.methods.reduceQuantity = async (product, amount) => {
+  product.quantityInStock = product.quantityInStock - amount;
+  await product.save();
 };
 
 const Product = mongoose.model("product", ProductSchema);
