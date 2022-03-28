@@ -30,6 +30,10 @@ exports.signUp = async (req, res) => {
     createSendToken(newUser, 200, req, res);
   } catch (error) {
     console.log(error);
+    res.json({
+      status: "Failure",
+      message: "Không thành công",
+    });
   }
 };
 
