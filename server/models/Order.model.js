@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
+const moment = require("moment");
 
 const OrderSchema = new mongoose.Schema({
   orderDate: {
     type: Date,
-    default: new Date(),
+    default: moment().format("YYYY-MM-DD"),
   },
   total: Number,
   status: String,
