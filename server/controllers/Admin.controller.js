@@ -20,11 +20,40 @@ exports.statistics = async (req, res) => {
       },
       {
         $project: {
-          _id: 0,
+          _id: 1,
           total: 1,
           details: 1,
           "products.name": 1,
           "products._id": 1,
+        },
+      },
+      {
+        $project: {
+          _id: 1,
+          total: 1,
+          products: {
+            $concatArrays: ["$details", "$products"],
+          },
+        },
+      },
+      {
+        $unwind: "$products",
+      },
+      {
+        $group: {
+          _id: {
+            _id: "$_id",
+            products: "$products._id",
+          },
+          total: { $first: "$total" },
+          products: { $mergeObjects: "$products" },
+        },
+      },
+      {
+        $group: {
+          _id: "$_id._id",
+          total: { $first: "$total" },
+          products: { $push: "$products" },
         },
       },
     ]);
