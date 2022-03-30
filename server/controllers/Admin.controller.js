@@ -2,13 +2,52 @@ const Order = require("../models/Order.model");
 
 exports.statistics = async (req, res) => {
   try {
-    const date = req.query.date;
+    const date = req.query;
+    let match;
+
+    if (date.year) {
+      match = {
+        orderDate: {
+          $gte: new Date(`${date.year}-01-01`),
+          $lte: new Date(`${date.year}-12-31`),
+        },
+      };
+    }
+
+    if (date.month) {
+      const oddMonth = [1, 3, 5, 7, 8, 10, 12];
+      const evenMonth = [2, 4, 6, 9, 10, 11];
+      const month = Number(date.month.split("-")[1]);
+      const year = Number(date.month.split("-")[0]);
+
+      if (oddMonth.includes(month)) {
+        match = {
+          orderDate: {
+            $gte: new Date(`${year}-${month}-01`),
+            $lte: new Date(`${year}-${month}-31`),
+          },
+        };
+      }
+
+      if (evenMonth.includes(month)) {
+        match = {
+          orderDate: {
+            $gte: new Date(`${year}-${month}-01`),
+            $lte: new Date(`${year}-${month}-30`),
+          },
+        };
+      }
+    }
+
+    if (date.date) {
+      match = {
+        orderDate: new Date(date.date),
+      };
+    }
 
     const data = await Order.aggregate([
       {
-        $match: {
-          orderDate: new Date(date),
-        },
+        $match: match,
       },
       {
         $lookup: {
