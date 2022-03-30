@@ -2,7 +2,7 @@ const Product = require("../models/Product.model");
 const crud = require("./crud");
 
 exports.getAllProduct = async (req, res) => {
-  await crud.getAll(Product, res);
+  await crud.getAll(Product, req, res);
 };
 
 exports.addProduct = async (req, res) => {

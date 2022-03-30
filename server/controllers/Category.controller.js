@@ -2,7 +2,7 @@ const Category = require("../models/Category.model");
 const crud = require("./crud");
 
 exports.getAllCategory = async (req, res) => {
-  await crud.getAll(Category, res);
+  await crud.getAll(Category, req, res);
 };
 
 exports.addCategory = async (req, res) => {

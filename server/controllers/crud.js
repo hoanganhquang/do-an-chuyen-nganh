@@ -55,7 +55,7 @@ exports.getAll = async (model, req, res) => {
   try {
     let data;
 
-    if (req.user.role === "User") {
+    if (req.user && req.user.role === "User") {
       data = await model.findById(req.user._id);
     } else {
       data = await model.find();
@@ -66,6 +66,7 @@ exports.getAll = async (model, req, res) => {
       data,
     });
   } catch (error) {
+    console.log(error);
     res.json({
       status: "failure",
       message: "Không thành công",
