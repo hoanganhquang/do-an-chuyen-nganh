@@ -9,6 +9,21 @@
       display: flex;
       justify-content: space-between;
 
+      .form-link {
+        font-weight: 400;
+        font-size: 0.9375rem;
+        line-height: 160%;
+        letter-spacing: -0.0033em;
+        color: v.$grey-text-color1;
+        cursor: pointer;
+        display: inline-block;
+        transition: all 0.1s linear;
+
+        &:hover {
+          color: v.$primary-color;
+        }
+      }
+
       .form {
         h1 {
           font-weight: 400;

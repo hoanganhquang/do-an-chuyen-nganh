@@ -1,6 +1,6 @@
 import "./SignInForm.scss";
 
-function SignInForm() {
+function SignInForm(props) {
   return (
     <div className="signInForm form">
       <h1>Đăng nhập</h1>
@@ -25,11 +25,13 @@ function SignInForm() {
 
         <div className="remember">
           <input id="check" type="checkbox" />
-          <label for="check">Nhớ tài khoản</label>
+          <label htmlFor="check">Nhớ tài khoản</label>
         </div>
       </div>
 
-      <p className="lostPassword">Quên mật khẩu?</p>
+      <p className="form-link" onClick={props.onForgotTab}>
+        Quên mật khẩu?
+      </p>
     </div>
   );
 }

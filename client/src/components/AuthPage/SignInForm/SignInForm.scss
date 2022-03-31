@@ -44,19 +44,4 @@
       }
     }
   }
-
-  .lostPassword {
-    font-weight: 400;
-    font-size: 0.9375rem;
-    line-height: 160%;
-    letter-spacing: -0.0033em;
-    color: v.$grey-text-color1;
-    cursor: pointer;
-    display: inline;
-    transition: all 0.1s linear;
-
-    &:hover {
-      color: v.$primary-color;
-    }
-  }
 }
