@@ -1,0 +1,44 @@
+@use "../../../styles/variables" as v;
+.address {
+  width: 100%;
+  .address-title {
+    text-align: left;
+    height: 6.25rem;
+    .title {
+      font-size: 1.5625rem;
+      padding-bottom: 1.25rem;
+    }
+    .edit-address {
+      font-size: 0.9375rem;
+      color: v.$primary-color;
+      cursor: pointer;
+    }
+  }
+  .address-content {
+    width: 100%;
+    height: fit-content;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid v.$grey-text-color3;
+    .address-item{
+      border: 1px solid v.$grey-text-color3;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      .item-title{
+        font-size: .9375rem;
+        color: v.$grey-text-color1;
+      }
+      .item-content{
+        font-size: .9375rem;
+        color: v.$black-text-color;
+      }
+      .item-title, .item-content{
+        display: inline;
+      }
+    }
+  }
+  .address-item:hover{
+    background-color: v.$grey-text-color2;
+  }
+}

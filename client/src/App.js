@@ -1,8 +1,9 @@
 import "./styles/index.scss";
-import { Footer, Header, HomePage } from "./components";
+import { Footer, Header } from "./components";
 import aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ProfilePage from "./components/MyAccount/ProfilePage/ProfilePage";
 
 function App() {
   useEffect(() => {
@@ -13,7 +14,7 @@ function App() {
     <div className="App">
       <div className="wrapper">
         <Header />
-        <HomePage />
+        <ProfilePage />
         <Footer />
       </div>
     </div>

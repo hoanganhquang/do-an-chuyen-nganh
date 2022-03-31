@@ -1,0 +1,43 @@
+@use "../../../styles/variables" as v;
+
+.orders {
+  width: 100%;
+  .orders-title {
+    text-align: left;
+    height: 60px;
+    .title {
+      font-size: 1.5625rem;
+    }
+  }
+
+  .orders-content {
+    table {
+      width: 100%;
+      border: none;
+      border-collapse: collapse;
+      border-radius: 10px 10px 0px 0px;
+      overflow: hidden;
+      .table-header {
+        background-color: v.$primary-color1;
+        border: 2px solid v.$primary-color1;
+        height: 50px;
+      }
+
+      .table-row {
+        text-align: center;
+        height: 70px;
+        border: 2px solid v.$primary-color1;
+        .btn-details {
+          background-color: v.$primary-color;
+          color: v.$white-color;
+          border-radius: 5px;
+          padding: 13px;
+          border: none;
+        }
+      }
+      .table-row:hover {
+        background-color: v.$grey-text-color2;
+      }
+    }
+  }
+}
