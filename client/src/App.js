@@ -1,5 +1,5 @@
 import "./styles/index.scss";
-import { DetailPage, Footer, Header, HomePage } from "./components";
+import { AuthPage, Footer, Header } from "./components";
 import aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <div className="wrapper">
         <Header />
-        <DetailPage />
+        <AuthPage />
         <Footer />
       </div>
     </div>
