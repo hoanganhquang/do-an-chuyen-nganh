@@ -29,7 +29,7 @@ const Orders = () => {
                 <td>2</td>
                 <td>$ 9999</td>
                 <td>
-                  <button className="btn-details">Chi tiết</button>
+                  <button className="button primaryBtn">Chi tiết</button>
                 </td>
               </tr>
               <tr className="table-row">
@@ -41,7 +41,7 @@ const Orders = () => {
                 <td>1</td>
                 <td>$ 1111</td>
                 <td>
-                  <button className="btn-details">Chi tiết</button>
+                  <button className="button primaryBtn">Chi tiết</button>
                 </td>
               </tr>
             </tbody>

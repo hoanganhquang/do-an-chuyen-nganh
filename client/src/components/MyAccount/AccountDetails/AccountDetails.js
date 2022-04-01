@@ -44,19 +44,23 @@ const AccountDetails = () => {
               <form>
                 <div className="change-password-input">
                   <p className="info-title">Mật khẩu hiện tại</p>
-                  <input type="text" className="info-content" />
+                  <input type="text" className="input" />
                 </div>
                 <div className="change-password-input">
                   <p className="info-title">Mật khẩu mới</p>
-                  <input type="text" className="info-content" />
+                  <input type="text" className="input" />
                 </div>
                 <div className="change-password-input">
                   <p className="info-title">Xác nhận mật khẩu</p>
-                  <input type="text" className="info-content" />
+                  <input type="text" className="input" />
                 </div>
                 <div className="change-password-button">
-                  <button className="btn-save">Lưu</button>
-                  <button className="btn-clear">Xóa</button>
+                  <button className="btn-change-pass button primaryBtn">
+                    Lưu
+                  </button>
+                  <button className="btn-change-pass button secondaryBtn">
+                    Xóa
+                  </button>
                 </div>
               </form>
             </div>

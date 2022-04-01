@@ -36,20 +36,11 @@
                 width: 30%;
                 display: flex;
                 justify-content: space-between;
-                .btn-save, .btn-clear{
+                .btn-change-pass{
                     display: inline-block;
                     padding: 10px;
                     width: 40%;
                     margin-top: 10px;
-                    border: none;
-                }
-                .btn-save{
-                    background-color: v.$primary-color;
-                    color: v.$white-color;
-                }
-                .btn-clear{
-                    background-color: v.$grey-text-color3;
-                    color: v.$primary-color;
                 }
             }
         }
@@ -61,8 +52,8 @@
         font-weight: bold;
     }
     .info-content{
-        border: 1px solid v.$grey-text-color2;
-        padding: 15px;
-        border-radius: 10px;
+        border: 1px solid v.$grey-text-color3;
+        padding: 17px 20px;
+        border-radius: 7px;
     }
 }

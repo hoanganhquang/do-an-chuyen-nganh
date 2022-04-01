@@ -27,12 +27,8 @@
         text-align: center;
         height: 70px;
         border: 2px solid v.$primary-color1;
-        .btn-details {
-          background-color: v.$primary-color;
-          color: v.$white-color;
-          border-radius: 5px;
-          padding: 13px;
-          border: none;
+        .button {
+          padding: 10px;
         }
       }
       .table-row:hover {
