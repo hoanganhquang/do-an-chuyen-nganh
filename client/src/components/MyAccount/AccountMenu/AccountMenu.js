@@ -8,19 +8,19 @@ const AccountMenu = () => {
         <h3>Trang cá nhân</h3>
       </div>
       <div className="menu-items">
-        <NavLink to="/" className="items" activeClassName="active" exact={true}>
+        <NavLink to="/profile-page/dashboard" className="items">
           Bảng điều khiển
         </NavLink>
-        <NavLink className="items" to="/orders">
+        <NavLink className="items" to="/profile-page/orders">
           Đơn hàng
         </NavLink>
-        <NavLink className="items" to="/address">
+        <NavLink className="items" to="/profile-page/address">
           Địa chỉ
         </NavLink>
-        <NavLink className="items" to="/account-details">
+        <NavLink className="items" to="/profile-page/account-details">
           Thông tin tài khoản
         </NavLink>
-        <NavLink className="items log-out" to="/log-out">
+        <NavLink className="items log-out" to="/profile-page/log-out">
           Đăng xuất
         </NavLink>
       </div>
