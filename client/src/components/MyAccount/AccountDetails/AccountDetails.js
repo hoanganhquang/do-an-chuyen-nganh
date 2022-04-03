@@ -15,26 +15,42 @@ const AccountDetails = () => {
               <div className="info-title">
                 <p>Tên</p>
               </div>
-              <div className="info-content">Dũng</div>
+              <div className="info-content">
+                <input type="text" className="input" />
+              </div>
             </div>
             <div className="info-items">
               <div className="info-title">
                 <p>Email</p>
               </div>
-              <div className="info-content">dungpham4320@gmail.com</div>
+              <div className="info-content">
+                <input type="text" className="input" />
+              </div>
             </div>
             <div className="info-items">
               <div className="info-title">
                 <p>Số điện thoại</p>
               </div>
-              <div className="info-content">0785485418</div>
+              <div className="info-content">
+                <input type="text" className="input" />
+              </div>
             </div>
             <div className="info-items">
               <div className="info-title">
                 <p>Địa chỉ</p>
               </div>
-              <div className="info-content">76 Nguyễn Văn Trỗi</div>
+              <div className="info-content">
+                <input type="text" className="input" />
+              </div>
             </div>
+          </div>
+          <div className="account-details-button">
+            <button className="btn-account-details button primaryBtn">
+              Lưu
+            </button>
+            <button className="btn-account-details button secondaryBtn">
+              Xóa
+            </button>
           </div>
           <div className="change-password">
             <div className="change-password-title">

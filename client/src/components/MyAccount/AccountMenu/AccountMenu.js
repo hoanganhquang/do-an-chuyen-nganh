@@ -14,9 +14,6 @@ const AccountMenu = () => {
         <NavLink className="items" to="/profile-page/orders">
           Đơn hàng
         </NavLink>
-        <NavLink className="items" to="/profile-page/address">
-          Địa chỉ
-        </NavLink>
         <NavLink className="items" to="/profile-page/account-details">
           Thông tin tài khoản
         </NavLink>

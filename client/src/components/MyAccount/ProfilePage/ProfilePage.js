@@ -3,7 +3,6 @@ import AccountMenu from "../AccountMenu/AccountMenu";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "../Dashboard/Dashboard";
 import Orders from "../Orders/Orders";
-import Address from "../Address/Address";
 import AccountDetails from "../AccountDetails/AccountDetails";
 
 const ProfilePage = () => {
@@ -17,7 +16,6 @@ const ProfilePage = () => {
           <Routes>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="orders" element={<Orders />} />
-            <Route path="address" element={<Address />} />
             <Route path="account-details" element={<AccountDetails />} />
           </Routes>
         </div>
