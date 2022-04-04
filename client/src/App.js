@@ -5,6 +5,7 @@ import aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import Card from "./components/Card/Card";
 
 function App() {
   useEffect(() => {
@@ -19,7 +20,12 @@ function App() {
         {/* <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/profile-page/*" element={<ProfilePage />} />
+<<<<<<< HEAD
         </Routes> */}
+=======
+          <Route path="/card" element={<Card />} />
+        </Routes>
+>>>>>>> 75ea405bedc9c61a5435974541e1910d66160364
         <Footer />
       </div>
     </div>
