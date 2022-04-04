@@ -31,13 +31,17 @@ header {
           gap: 0 40px;
 
           .item {
-            font-size: 0.938rem;
-            line-height: 160%;
-            color: v.$black-text-color;
-            cursor: pointer;
+            a {
+              font-size: 0.938rem;
+              line-height: 160%;
+              color: v.$black-text-color;
+              cursor: pointer;
+            }
 
             &--active {
-              color: v.$primary-color;
+              a {
+                color: v.$primary-color;
+              }
             }
           }
         }

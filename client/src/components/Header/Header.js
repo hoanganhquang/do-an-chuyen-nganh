@@ -3,6 +3,7 @@ import card from "../../assets/icons/Card.svg";
 
 import clsx from "clsx";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   const [headerScrollStyle, setHeaderScrollStyle] = useState(false);
@@ -22,9 +23,17 @@ function Header() {
               <img src={require("../../assets/images/Logo.png")} alt="" />
             </div>
             <ul className="menu">
-              <li className="item item--active">Trang chủ</li>
-              <li className="item">Sản phẩm</li>
-              <li className="item">Đăng xuất</li>
+              <li className="item item--active">
+                <NavLink to="/">Trang chủ</NavLink>
+              </li>
+              <li className="item">
+                <a href="/#products">Sản phẩm</a>
+              </li>
+              <li className="item">
+                <a href="" style={{ color: "red" }}>
+                  Đăng xuất
+                </a>
+              </li>
             </ul>
           </div>
           <div className="features">

@@ -2,7 +2,7 @@ import "./SignUpForm.scss";
 
 function SignUpForm() {
   return (
-    <div className="SignUpForm form">
+    <div className="SignUpForm form" data-aos="fade-left">
       <h1>Đăng ký</h1>
 
       <div className="form-control">

@@ -2,7 +2,7 @@ import "./SignInForm.scss";
 
 function SignInForm(props) {
   return (
-    <div className="signInForm form">
+    <div className="signInForm form" data-aos="fade-right">
       <h1>Đăng nhập</h1>
 
       <div className="form-control">

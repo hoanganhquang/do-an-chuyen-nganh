@@ -5,7 +5,7 @@ import Product from "./Product/Product";
 function MainSection() {
   return (
     <>
-      <section className="main">
+      <section className="main" id="products">
         <div className="container">
           <div className="main-main">
             <Category />
