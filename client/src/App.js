@@ -1,5 +1,5 @@
 import "./styles/index.scss";
-import { Footer, Header, HomePage } from "./components";
+import { BillingCheckout, Footer, Header, HomePage } from "./components";
 import ProfilePage from "./components/MyAccount/ProfilePage/ProfilePage";
 import aos from "aos";
 import "aos/dist/aos.css";
@@ -15,10 +15,11 @@ function App() {
     <div className="App">
       <div className="wrapper">
         <Header />
-        <Routes>
+        <BillingCheckout />
+        {/* <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/profile-page/*" element={<ProfilePage />} />
-        </Routes>
+        </Routes> */}
         <Footer />
       </div>
     </div>
