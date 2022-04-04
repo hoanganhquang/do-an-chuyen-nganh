@@ -1,0 +1,39 @@
+@use "../../../styles/variables" as v;
+
+.menu-header {
+  background-color: v.$primary-color;
+  width: 300px;
+  height: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: left;
+  h3 {
+    color: v.$white-color;
+    font-size: 1.4375rem;
+    line-height: 45px;
+    padding-left: 45px;
+  }
+}
+.menu-items {
+  width: 300px;
+
+  .items {
+    height: 50px;
+    display: block;
+    background-color: v.$white-color;
+    color: v.$black-text-color;
+    font-size: 0.9375rem;
+    line-height: 45px;
+    padding-left: 45px;
+    border: 0.1px solid v.$grey-text-color3;
+  }
+  .items:hover {
+    background-color: v.$grey-text-color3;
+  }
+  .active {
+    background-color: v.$grey-text-color4;
+  }
+  .log-out {
+    color: v.$red-color;
+  }
+}
