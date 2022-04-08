@@ -1,0 +1,8 @@
+@use "../../../styles/variables" as v;
+
+.statistics {
+  .calendar-box {
+    display: flex;
+    gap: 0 10px;
+  }
+}

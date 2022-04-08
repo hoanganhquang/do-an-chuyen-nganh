@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { AuthPage, Footer, Header, HomePage } from "./components";
+import { Admin, AuthPage, Footer, Header, HomePage } from "./components";
 import ProfilePage from "./components/MyAccount/ProfilePage/ProfilePage";
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/profile-page/*" element={<ProfilePage />} />
+          <Route path="/admin/*" element={<Admin />} />
         </Routes>
         <Footer />
       </div>
