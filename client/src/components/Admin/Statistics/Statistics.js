@@ -32,7 +32,19 @@ export default function Statistics() {
         />
       </div>
 
-      <div className="statistics-box"></div>
+      <div className="statistics-box">
+        <ul>
+          <li>
+            Doanh thu: <span>2.000.000 vnd</span>
+          </li>
+          <li>
+            Tổng sản phẩm đã bán: <span>100</span>
+          </li>
+          <li>
+            Sản phẩm bán chạy nhất: <span>Bánh canh</span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
