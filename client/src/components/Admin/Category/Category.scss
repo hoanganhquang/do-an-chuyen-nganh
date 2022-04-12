@@ -1,7 +1,47 @@
 @use "../../../styles/variables" as v;
 
 .category {
+  .category-modal {
+    .modal-box {
+      width: 374px;
+
+      .modal-body {
+        label {
+          color: v.$black-text-color;
+        }
+
+        .input {
+          margin-top: 10px;
+          height: 20px;
+        }
+
+        button {
+          height: 40px;
+          width: 90px;
+        }
+      }
+    }
+  }
+
   table {
     width: 300px;
+
+    td {
+      width: 100%;
+    }
+
+    tr {
+      .table-func {
+        svg {
+          padding: 0 5px;
+        }
+      }
+    }
+
+    tbody {
+      display: block;
+      height: 372px;
+      overflow: auto;
+    }
   }
 }

@@ -1,0 +1,21 @@
+@use "../../../styles/variables" as v;
+
+.product {
+  table {
+    width: 100%;
+
+    .img {
+      img {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+      }
+    }
+
+    tbody {
+      tr {
+        height: 700px;
+      }
+    }
+  }
+}
