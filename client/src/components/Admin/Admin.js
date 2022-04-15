@@ -5,6 +5,7 @@ import SideBar from "./SideBar/SideBar";
 import Statistics from "./Statistics/Statistics";
 import Category from "./Category/Category";
 import Product from "./Product/Product";
+import Order from "./Order/Order";
 
 function Admin() {
   return (
@@ -19,6 +20,7 @@ function Admin() {
                 <Route path="statistics" element={<Statistics />} />
                 <Route path="categories" element={<Category />} />
                 <Route path="products" element={<Product />} />
+                <Route path="orders" element={<Order />} />
               </Routes>
             </div>
           </div>

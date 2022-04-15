@@ -68,7 +68,6 @@ export default function Product() {
       </div>
 
       {/* Deletion modal */}
-      {/* Deletion modal */}
       <div className={clsx("modal", "delModal", { show: showDelModal })}>
         <div className="modal-box">
           <div className="modal-header">
@@ -81,6 +80,52 @@ export default function Product() {
             <button className="secondaryBtn" onClick={handleShowDelModal}>
               Huỷ
             </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Edition modal */}
+      <div
+        className={clsx("modal", "product-modal", "editModal", {
+          show: showEditModal,
+        })}
+      >
+        <div className="modal-box">
+          <div className="modal-header">
+            <h1 className="modal-title">Chỉnh sửa</h1>
+            <FontAwesomeIcon icon={faClose} onClick={handleShowEditModal} />
+          </div>
+
+          <div className="modal-body">
+            <div className="form-control">
+              <label htmlFor="">Tên sản phẩm</label> <br />
+              <input type="text" className="input" />
+            </div>
+            <div className="form-control">
+              <label htmlFor="">Mô tả</label> <br />
+              <input type="text" className="input" />
+            </div>
+            <div className="form-control">
+              <label htmlFor="">Giá tiền</label> <br />
+              <input type="number" className="input" />
+            </div>
+            <div className="form-control">
+              <label htmlFor="">Hàng trong kho</label> <br />
+              <input type="text" className="input" />
+            </div>
+            <div className="form-control">
+              <label htmlFor="">Hình ảnh</label> <br />
+              <input type="file" />
+            </div>
+            <div className="form-control">
+              <label htmlFor="">Loại sản phẩm</label> <br />
+              <select name="" className="input">
+                <option value="">dasdsa</option>
+                <option value="">dasdsa</option>
+                <option value="">dasdsa</option>
+              </select>
+            </div>
+            <button className="primaryBtn">Hoàn tất</button>
           </div>
         </div>
       </div>
