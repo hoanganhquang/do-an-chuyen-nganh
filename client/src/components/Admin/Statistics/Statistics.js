@@ -16,7 +16,7 @@ export default function Statistics() {
   };
 
   return (
-    <div className="statistics" data-aos="fade-left">
+    <div className="statistics">
       <h1 className="title">Thống kê</h1>
 
       <div className="calendar-box">

@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 
 import { Admin, AuthPage, Footer, Header, HomePage } from "./components";
 import ProfilePage from "./components/MyAccount/ProfilePage/ProfilePage";
+import Card from "./components/Card/Card";
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/auth" element={<AuthPage />} />
+          <Route path="/card" element={<Card />} />
           <Route path="/profile-page/*" element={<ProfilePage />} />
           <Route path="/admin/*" element={<Admin />} />
         </Routes>

@@ -24,7 +24,7 @@ export default function Product() {
   };
 
   return (
-    <div className="product" data-aos="fade-left">
+    <div className="product">
       {/* Addition modal */}
       <div className={clsx("modal", "product-modal", { show: showAddModal })}>
         <div className="modal-box">

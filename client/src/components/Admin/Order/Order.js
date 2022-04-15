@@ -12,7 +12,7 @@ export default function Order() {
   };
 
   return (
-    <div className="order" data-aos="fade-left">
+    <div className="order">
       {/* Details modal */}
       <div className={clsx("modal", "order-modal", { show: showDetailsModal })}>
         <div className="modal-box">
