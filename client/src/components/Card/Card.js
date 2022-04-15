@@ -22,9 +22,7 @@ const Card = () => {
                   <td>$ 999</td>
                   <td>
                     <div className="quantity">
-                      <button className="button primaryBtn">-</button>
-                      <p>1</p>
-                      <button className="button primaryBtn">+</button>
+                      <input type="number" />
                     </div>
                   </td>
                   <td>

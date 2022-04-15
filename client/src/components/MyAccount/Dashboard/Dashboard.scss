@@ -23,7 +23,7 @@
       height: 9.375rem;
       width: 11.25rem;
       display: inline-block;
-      background-color: v.$grey-text-color4;
+      background-color: rgba(15, 175, 233, 0.1);
       border-radius: 0.625rem;
       text-align: center;
 
@@ -33,7 +33,6 @@
       }
     }
     .dashboard-box:hover {
-      background-color: v.$grey-text-color3;
       cursor: pointer;
     }
   }
