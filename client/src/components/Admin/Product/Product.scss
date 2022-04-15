@@ -1,6 +1,22 @@
 @use "../../../styles/variables" as v;
 
 .product {
+  .product-modal {
+    .modal-box {
+      width: 350px;
+
+      .modal-body {
+        .form-control {
+          margin-bottom: 20px;
+          label {
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
   table {
     width: 100%;
 
