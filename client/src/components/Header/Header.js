@@ -3,16 +3,25 @@ import card from "../../assets/icons/Card.svg";
 
 import clsx from "clsx";
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Header() {
   const [headerScrollStyle, setHeaderScrollStyle] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setHeaderScrollStyle(window.scrollY > 150);
     });
   });
+
+  const handleNavigateCard = () => {
+    navigate("/card");
+  };
+
+  const handleNavigateAccount = () => {
+    navigate("/profile-page/dashboard");
+  };
 
   return (
     <header className={clsx({ scrollShow: headerScrollStyle })}>
@@ -37,11 +46,13 @@ function Header() {
             </ul>
           </div>
           <div className="features">
-            <div className="img-box">
+            <div className="img-box" onClick={handleNavigateCard}>
               <img src={card} alt="" />
-              <div className="number">5</div>
+              {/* <div className="number">5</div> */}
             </div>
-            <button className="primaryBtn">Tài khoản</button>
+            <button className="primaryBtn" onClick={handleNavigateAccount}>
+              Tài khoản
+            </button>
           </div>
         </div>
       </div>
