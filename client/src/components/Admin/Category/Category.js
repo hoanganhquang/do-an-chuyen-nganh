@@ -7,19 +7,30 @@ import { useState } from "react";
 import "./Category.scss";
 
 export default function Category() {
-  const [showModal, setShowModal] = useState(false);
+  const [showAddModal, setShowAddModal] = useState(false);
+  const [showDelModal, setshowDelModal] = useState(false);
+  const [showEditModal, setshowEditModal] = useState(false);
 
-  const handleShowModal = () => {
-    setShowModal(!showModal);
+  const handleShowAddModal = () => {
+    setShowAddModal(!showAddModal);
+  };
+
+  const handleShowDelModal = () => {
+    setshowDelModal(!showDelModal);
+  };
+
+  const handleShowEditModal = () => {
+    setshowEditModal(!showEditModal);
   };
 
   return (
     <div className="category">
-      <div className={clsx("modal", "category-modal", { show: showModal })}>
+      {/* Addition modal */}
+      <div className={clsx("modal", "category-modal", { show: showAddModal })}>
         <div className="modal-box">
           <div className="modal-header">
             <h1 className="modal-title">Thêm sản phẩm</h1>
-            <FontAwesomeIcon icon={faClose} onClick={handleShowModal} />
+            <FontAwesomeIcon icon={faClose} onClick={handleShowAddModal} />
           </div>
 
           <div className="modal-body">
@@ -30,9 +41,46 @@ export default function Category() {
         </div>
       </div>
 
+      {/* Deletion modal */}
+      <div className={clsx("modal", "delModal", { show: showDelModal })}>
+        <div className="modal-box">
+          <div className="modal-header">
+            <h1 className="modal-title">Bạn chắc chắn muốn xoá?</h1>
+            <FontAwesomeIcon icon={faClose} onClick={handleShowDelModal} />
+          </div>
+
+          <div className="modal-body">
+            <button className="primaryBtn">Xoá</button>
+            <button className="secondaryBtn" onClick={handleShowDelModal}>
+              Huỷ
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Edition modal */}
+      <div
+        className={clsx("modal", "category-modal", "editModal", {
+          show: showEditModal,
+        })}
+      >
+        <div className="modal-box">
+          <div className="modal-header">
+            <h1 className="modal-title">Chỉnh sửa</h1>
+            <FontAwesomeIcon icon={faClose} onClick={handleShowEditModal} />
+          </div>
+
+          <div className="modal-body">
+            <label htmlFor="">Tên loại sản phẩm</label> <br />
+            <input type="text" className="input" />
+            <button className="primaryBtn">Hoàn tất</button>
+          </div>
+        </div>
+      </div>
+
       <h1 className="title">Loại sản phẩm</h1>
 
-      <p className="addBtn" onClick={handleShowModal}>
+      <p className="addBtn" onClick={handleShowAddModal}>
         Thêm
       </p>
 
@@ -46,82 +94,10 @@ export default function Category() {
           <tr>
             <td>Đồ ăn</td>
             <td className="table-func">
-              <FontAwesomeIcon icon={faTrash} />
+              <FontAwesomeIcon icon={faTrash} onClick={handleShowDelModal} />
             </td>
             <td className="table-func">
-              <FontAwesomeIcon icon={faEdit} />
-            </td>
-          </tr>
-          <tr>
-            <td>Đồ ăn</td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faTrash} />
-            </td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faEdit} />
-            </td>
-          </tr>
-          <tr>
-            <td>Đồ ăn</td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faTrash} />
-            </td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faEdit} />
-            </td>
-          </tr>
-          <tr>
-            <td>Đồ ăn</td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faTrash} />
-            </td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faEdit} />
-            </td>
-          </tr>
-          <tr>
-            <td>Đồ ăn</td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faTrash} />
-            </td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faEdit} />
-            </td>
-          </tr>
-          <tr>
-            <td>Đồ ăn</td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faTrash} />
-            </td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faEdit} />
-            </td>
-          </tr>
-          <tr>
-            <td>Đồ ăn</td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faTrash} />
-            </td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faEdit} />
-            </td>
-          </tr>
-          <tr>
-            <td>Đồ ăn</td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faTrash} />
-            </td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faEdit} />
-            </td>
-          </tr>
-          <tr>
-            <td>Đồ ăn</td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faTrash} />
-            </td>
-            <td className="table-func">
-              <FontAwesomeIcon icon={faEdit} />
+              <FontAwesomeIcon icon={faEdit} onClick={handleShowEditModal} />
             </td>
           </tr>
         </tbody>

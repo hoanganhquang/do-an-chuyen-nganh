@@ -70,6 +70,24 @@
         }
       }
 
+      .delModal {
+        .modal-box {
+          width: 350px;
+
+          .modal-body {
+            display: flex;
+            gap: 0 20px;
+            justify-content: center;
+
+            button {
+              margin: 10px 0;
+              width: 100px;
+              height: 40px;
+            }
+          }
+        }
+      }
+
       .show {
         visibility: visible;
         opacity: 1;
