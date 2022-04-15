@@ -32,7 +32,23 @@ export default function Statistics() {
         />
       </div>
 
-      <div className="statistics-box">
+      <table>
+        <tbody>
+          <tr>
+            <td className="header">Doanh thu</td>
+            <td>200.000vnd</td>
+          </tr>
+          <tr>
+            <td className="header">Tổng sản phẩm đã bán</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td className="header">Sản phẩm bán chạy nhất</td>
+            <td>Bánh canh</td>
+          </tr>
+        </tbody>
+      </table>
+      {/* <div className="statistics-box">
         <ul>
           <li>
             Doanh thu: <span>2.000.000 vnd</span>
@@ -44,7 +60,7 @@ export default function Statistics() {
             Sản phẩm bán chạy nhất: <span>Bánh canh</span>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }
