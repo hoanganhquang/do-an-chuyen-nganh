@@ -24,7 +24,7 @@ export default function Category() {
   };
 
   return (
-    <div className="category">
+    <div className="category" data-aos="fade-left">
       {/* Addition modal */}
       <div className={clsx("modal", "category-modal", { show: showAddModal })}>
         <div className="modal-box">

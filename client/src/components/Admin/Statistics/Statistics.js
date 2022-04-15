@@ -1,3 +1,6 @@
+import { faGem } from "@fortawesome/free-regular-svg-icons";
+import { faCheck, faMoneyCheckDollar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -13,7 +16,7 @@ export default function Statistics() {
   };
 
   return (
-    <div className="statistics">
+    <div className="statistics" data-aos="fade-left">
       <h1 className="title">Thống kê</h1>
 
       <div className="calendar-box">
@@ -32,35 +35,39 @@ export default function Statistics() {
         />
       </div>
 
-      <table>
-        <tbody>
-          <tr>
-            <td className="header">Doanh thu</td>
-            <td>200.000vnd</td>
-          </tr>
-          <tr>
-            <td className="header">Tổng sản phẩm đã bán</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <td className="header">Sản phẩm bán chạy nhất</td>
-            <td>Bánh canh</td>
-          </tr>
-        </tbody>
-      </table>
-      {/* <div className="statistics-box">
-        <ul>
-          <li>
-            Doanh thu: <span>2.000.000 vnd</span>
-          </li>
-          <li>
-            Tổng sản phẩm đã bán: <span>100</span>
-          </li>
-          <li>
-            Sản phẩm bán chạy nhất: <span>Bánh canh</span>
-          </li>
-        </ul>
-      </div> */}
+      <div className="statistics-box">
+        <div className="item">
+          <div className="icon-box">
+            <FontAwesomeIcon icon={faMoneyCheckDollar} />
+          </div>
+          <div className="text">
+            <p>
+              10.000.000 <span>vnd</span>
+            </p>
+            <p>Doanh thu</p>
+          </div>
+        </div>
+        <div className="item">
+          <div className="icon-box">
+            <FontAwesomeIcon icon={faCheck} />
+          </div>
+          <div className="text">
+            <p>
+              20 <span>sản phẩm</span>
+            </p>
+            <p>Đã bán</p>
+          </div>
+        </div>
+        <div className="item">
+          <div className="icon-box">
+            <FontAwesomeIcon icon={faGem} />
+          </div>
+          <div className="text">
+            <p>Bánh canh</p>
+            <p>Bán chạy nhất</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
