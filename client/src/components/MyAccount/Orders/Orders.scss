@@ -19,14 +19,15 @@
       overflow: hidden;
       .table-header {
         background-color: rgba(15, 175, 233, 0.1);
-        border: 1px solid rgba(15, 175, 233, 0.1);
         height: 50px;
       }
 
       .table-row {
         text-align: center;
         height: 70px;
-        border: 1px solid rgba(15, 175, 233, 0.1);
+        border-bottom: 1px solid rgba(15, 175, 233, 0.1);
+        border-right: 1px solid rgba(15, 175, 233, 0.1);
+        border-left: 2px solid rgba(15, 175, 233, 0.1);
         .button {
           padding: 5px;
         }
