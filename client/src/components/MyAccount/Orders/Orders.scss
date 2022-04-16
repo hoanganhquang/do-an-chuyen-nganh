@@ -2,6 +2,7 @@
 
 .orders {
   width: 100%;
+  letter-spacing: 0.3px;
   .orders-title {
     text-align: left;
     height: 60px;
@@ -17,6 +18,12 @@
       border-collapse: collapse;
       border-radius: 10px 10px 0px 0px;
       overflow: hidden;
+      thead{
+        th{
+          font-weight: normal;
+          font-size: 1rem;
+        }
+      }
       .table-header {
         background-color: rgba(15, 175, 233, 0.1);
         height: 50px;
@@ -25,15 +32,12 @@
       .table-row {
         text-align: center;
         height: 70px;
-        border-bottom: 1px solid rgba(15, 175, 233, 0.1);
-        border-right: 1px solid rgba(15, 175, 233, 0.1);
-        border-left: 2px solid rgba(15, 175, 233, 0.1);
+        border-bottom: 1px solid v.$grey-text-color3;
+        border-right: 1px solid v.$grey-text-color3;
+        border-left: 2px solid v.$grey-text-color3;
         .button {
           padding: 5px;
         }
-      }
-      .table-row:hover {
-        background-color: rgba(15, 175, 233, 0.1);
       }
     }
   }

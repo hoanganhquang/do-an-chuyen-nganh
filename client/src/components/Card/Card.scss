@@ -1,10 +1,11 @@
 @use ".././../styles/variables" as v;
 
 .card{
-display: flex;
-padding-top: 160px;
+  display: flex;
+  padding-top: 160px;
   padding-bottom: 160px;
   justify-content: space-between;
+  letter-spacing: 0.3px;
   .card-content{
       width: 70%;
       .card-title{
@@ -15,18 +16,25 @@ padding-top: 160px;
         width: 90%;
         border: none;
         border-collapse: collapse;
-        border-radius: 5px;
+        border-radius: 10px 10px 0px 0px;
         overflow: hidden;
+        thead{
+            th{
+                font-weight: normal;
+                font-size: 1rem;
+            }
+        }
         .table-header {
           background-color: v.$primary-color1;
-          border: 2px solid v.$primary-color1;
           height: 50px;
         }
   
         .table-row {
           text-align: center;
           height: 70px;
-          border: 2px solid v.$primary-color1;
+          border-bottom: 1px solid v.$grey-text-color3;;
+          border-right: 1px solid v.$grey-text-color3;;
+          border-left: 2px solid v.$grey-text-color3;;
           .quantity{
               display: flex;
               justify-content: space-evenly;
@@ -51,13 +59,14 @@ padding-top: 160px;
     .card-header{
         background-color: v.$primary-color;
         height: 50px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align: left;
         h3 {
             color: v.$white-color;
             font-size: 1.4375rem;
             line-height: 45px;
+            padding: 5px 0px 0px 20px;
           }
     }
     .card-items{
@@ -65,18 +74,19 @@ padding-top: 160px;
         border: 1px solid v.$primary-color;
         display: flex;
         justify-content: space-between;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         p{
             padding: 10px 20px 10px 20px;
             color: v.$grey-text-color1;
-            font-weight: bold;
+            font-weight: normal;
         }
     }
     .btn-checkout{
         width: 100%;
         padding: 10px;
         margin-top: 20px;
+        border-radius: 10px;
     }
 }
 input[type=number]::-webkit-inner-spin-button, 
