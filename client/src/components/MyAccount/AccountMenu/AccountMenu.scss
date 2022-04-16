@@ -27,9 +27,9 @@
     font-size: 0.9375rem;
     line-height: 50px;
     padding-left: 50px;
-    border-bottom: 1px solid rgba(15, 175, 233, 0.1);
-    border-left: 1px solid rgba(15, 175, 233, 0.1);
-    border-right: 1px solid rgba(15, 175, 233, 0.1);
+    border-bottom: 1px solid v.$grey-text-color3;
+    border-left: 1px solid v.$grey-text-color3;
+    border-right: 1px solid v.$grey-text-color3;
   }
   .items:hover {
     background-color: rgba(15, 175, 233, 0.1);
