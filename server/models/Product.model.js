@@ -6,9 +6,9 @@ const ProductSchema = new mongoose.Schema({
   price: Number,
   quantityInStock: Number,
   image: String,
-  category: {
+  province: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "category",
+    ref: "province",
   },
 });
 

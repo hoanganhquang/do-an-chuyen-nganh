@@ -1,250 +1,210 @@
 [
   {
-    "name": "Dâu tây",
-    "description": "Dâu tây Đà Lạt",
+    "name": "Nước Mắm Cát Hải",
+    "description": "Nước Mắm Cát Hải có tên gọi khác là nước mắm Vạn Vân được người dân nơi đây truyền tai nhau qua câu ca dao có từ lâu đời, “Dưa na, húng láng, ném báng, tương bần, Nước mắm Vạn Vân, cá rô Đầm Sét”. Nước mắm Cát Hải được chiết xuất từ con cá biển theo phương thức cổ truyền qua kỹ thuật chọn cá.",
+    "price": 39000,
+    "quantityInStock": 50,
+    "image": "nuoc-mam-cat-hai.png",
+    "province": "625fc94d4f517e297955c1ec"
+  },
+  {
+    "name": "Rượu nếp cái hoa vàng",
+    "description": "Rượu là một phần không thể tách rời trong đời sống văn hóa tinh thần và trong các lễ hội của người dân Việt Nam. Mỗi loại rượu đặc trưng gắn riêng với vùng đất đó như rượu cần Tây Nguyên, rượu Hồng Đào Quảng Nam… Nhắc đến Hải Phòng thì không ai quên nhắc đến rượu nếp cái hoa vàng, một thức uống quen thuộc đối với mỗi người dân nơi đây.",
+    "price": 70000,
+    "quantityInStock": 50,
+    "image": "ruou-nep-cai-hoa-vang.jpg",
+    "province": "625fc94d4f517e297955c1ec"
+  },
+  {
+    "name": "Bánh Đa Cua",
+    "description": "Bánh Đa Cua Hải Phòng từ lâu đã là món ăn dân dã và quen thuộc của người dân nơi đây, nhờ có hương vị đặc biệt riêng của mình đến nay bánh đa cua không chỉ nằm trong khuôn khổ Hải Phòng mà đã lan tỏa và phổ biến khắp mọi nơi trở thành một món đặc sản Hải Phòng nức tiếng gần xa. Bánh Đa Cua Hải Phòng đã trở thành thành nét văn hóa của thành phố biển, đã đến với Hải Phòng, đừng quên thưởng thức món bánh đa cua và mua về làm quà cho người thân, gia đình.",
+    "price": 40000,
+    "quantityInStock": 50,
+    "image": "banh-da-cua.jpg",
+    "province": "625fc94d4f517e297955c1ec"
+  },
+  {
+    "name": "Tỏi đen Việt Nhật",
+    "desc": "Tỏi đen Việt Nhật với công dụng hỗ trợ điều trị các bệnh ung thư và mang đến sức khỏe tốt cho người sử dụng. Tỏi đen Việt Nhật được lấy từ những củ tỏi có chất lượng. Sau quá trình lên men nhiều ngày (khoảng 45 ngày) đã tạo ra được loại tỏi đen với những đặc tính quý giá mà tỏi thường không thể có được.",
+    "price": 145000,
+    "quantityInStock": 50,
+    "image": "toi-den-ngon.jpg",
+    "province": "625fc94d4f517e297955c1eb"
+  },
+  {
+    "name": "Chả Cá Lã Vọng",
+    "desc": "Chả cá Lã Vọng là món chả làm từ cá thái miếng đem tẩm ướp, nướng trên than rồi rán lại trong chảo mỡ mang hương vị đậm đà của đặc sản Miền Bắc.",
+    "price": 69000,
+    "quantityInStock": 50,
+    "image": "cha-ca-la-vong1.jpg",
+    "province": "625fc94d4f517e297955c1eb"
+  },
+  {
+    "name": "Ô mai mơ gừng",
+    "desc": "Ô mai mơ gừng làm món ăn yêu thích cho trẻ em, chị em phụ nữ. không những thế ô mai mơ gừng còn có công dụng chữa bệnh: Trị ho lâu ngày,cơ thể mệt mỏi, ho nhiệt,khạc ra đờm có máu, khan tiếng viêm phế quản, viêm họng...",
+    "price": 39000,
+    "quantityInStock": 50,
+    "image": "o-mai-gung.jpg",
+    "province": "625fc94d4f517e297955c1eb"
+  },
+  {
+    "name": "Ô mai mơ cam thảo",
+    "desc": "Từ mùi vị rất phong phú độc đáo của trái cây chín và bàn tay khéo léo của những người thợ lành nghề ở xứ Hà Thành đã cho ra một loại sản phẩm ô mai cam mơ thảo ngon tuyệt, lúc thì có vị cay nồng của gừng, đằm thắm của cam thảo, khe khẽ mùi chua chua thanh thanh của trái chín và mặn mà  muối biển.",
+    "price": 25000,
+    "quantityInStock": 50,
+    "image": "mo-cam-thao.jpg",
+    "province": "625fc94d4f517e297955c1eb"
+  },
+  {
+    "name": "Trà lá sen",
+    "desc": "Trà lá sen là đặc sản Hà Nội nổi tiếng, thích hợp cho cả người già và trẻ em, đây là cách phòng chống tai biến mạch máu não, lão hóa, mất ngủ, giảm mỡ máu cao, tốt cho tim mạch. Trà lá sen có chứa nhiều alkaloid, flavonoid có tác dụng giải co thắt cơ trơn, giảm đau đầu, an thần, chống rối loạn nhịp tim và nhiều công dụng tuyệt vời.",
     "price": 100000,
     "quantityInStock": 50,
-    "image": "dau-tay-da-lat.png",
-    "category": "62417468a4e565283e38feb6"
+    "image": "tra-la-sen%20(1).jpg",
+    "province": "625fc94d4f517e297955c1eb"
   },
   {
-    "name": "Hồng giòn",
-    "description": "Hồng giòn Đà Lạt",
+    "name": "Bánh Chè Lam",
+    "desc": "Bánh Chè Lam một đặc sản ẩm thực dân dã, từ lâu đã có sức hút đối với người tiêu dùng bởi sự kết hợp hài hòa của các sản vật thân thuộc từ dòng đất quê hương. Đặc biệt, với những người con xứ Đoài ở xa, khi được thưởng thức Bánh Chè Lam – món quà quê cùng với chén nước trà nóng, sẽ cảm nhận rõ hơn vị quê hương nồng ấm, đậm đà ẩn trong hương nếp, mật mía lẫn vị gừng cay sâu nặng tự thuở nào.",
+    "price": 35000,
+    "quantityInStock": 50,
+    "image": "banh%20che%20lam1.jpg",
+    "province": "625fc94d4f517e297955c1eb"
+  },
+  {
+    "name": "Ô mai sấu Hà Nội",
+    "desc": "Đã đến với Hà Nội mà chưa thưởng thức được vị chua chua, cay cay, ngọt ngọt, giòn giòn của Ô mai sấu thì quả là một thiếu sót lớn. Ô mai sấu mang đậm tinh hoa ẩm thực của cùng đất Thủ đô này khiến người đi xa luôn vương vấn. Là một món đặc sản Hà Nội làm quà vang danh toàn quốc và cả nước ngoài",
+    "price": 150000,
+    "quantityInStock": 50,
+    "image": "o%20mai%20sau.jpg",
+    "province": "625fc94d4f517e297955c1eb"
+  },
+  {
+    "name": "Bánh Cốm Hàng Than",
+    "desc": "Nhắc đến phố cổ Hà Nội người ta không thể quên Hàng Than, con phố nhỏ có nhiều nhà hàng bánh cốm. Mỗi độ thu sang hương cốm say lòng du khách. Với những bí quyết riêng, món đặc sản này không thể thiếu trong gói quà gửi người xa xứ, cưới hỏi, giỗ chạp.Bánh cốm Hàng Than là lựa chọn thay thế hoàn hảo với nhiều khách du lịch Hà Nội. Cũng làm từ những bông lúa non thơm hương đồng gió nội nhưng cốm sau khi rang, giã, sàng, sẩy phải được xào chín với đường, rồi gói vào lớp lá chuối tươi, bên trong có nhân đậu xanh vàng nhuyễn.",
+    "price": 4000,
+    "quantityInStock": 50,
+    "image": "banh%20com.jpg",
+    "province": "625fc94d4f517e297955c1eb"
+  },
+  {
+    "name": "Thịt chua Thanh Sơn",
+    "desc": "Thịt chua Thanh Sơn là đặc sản Phú Thọ nổi tiếng lôi cuốn biết bao thực khách bởi hương vị thơm ngon của nó.",
+    "price": 250000,
+    "quantityInStock": 50,
+    "image": "thit-chua-thanh-son.png",
+    "province": "625fc94d4f517e297955c1ee"
+  },
+  {
+    "name": "Nấm Tỏa Dương",
+    "desc": "Nấm Tỏa Dương là một trong những thần dược của đặc sản Lào Cai, mỗi khi có dịp ghé thăm địa danh này thì du khách nào cũng không quên mua vài cân nấm về sử dụng hay làm quà cho người thân, ngoài được coi là thần dược của quý ông, nấm Tỏa Dương còn có thể ngăn ngừa hình thành tế bào ung thư.",
+    "price": 150000,
+    "quantityInStock": 50,
+    "image": "nam-toa-duong.jpg",
+    "province": "625fc94d4f517e297955c1ef"
+  },
+  {
+    "name": "Nấm Chân Chim",
+    "desc": "Nấm chân chim Bắc Hà là một trong những đặc sản quý của Lào Cai. Nấm chân chim có chất lượng dinh dưỡng cao, trong y học nấm còn là dược liệu hiếm dùng để hỗ trợ điều trị bệnh. Với vị ngọt tự nhiên sẵn sàng làm xiêu lòng mọi thực khách khi thưởng thức món nấm này.",
     "price": 100000,
     "quantityInStock": 50,
-    "image": "hong-gion.png",
-    "category": "62417468a4e565283e38feb6"
+    "image": "Nam-chan-chim.jpg",
+    "province": "625fc94d4f517e297955c1ef"
   },
   {
-    "name": "Mứt hoa hồng",
-    "description": "Mứt hoa hồng Đà Lạt",
-    "price": 200000,
+    "name": "Rượu San Lùng",
+    "desc": "Rượu San Lùng là loại rượu có tiếng của người Dao đỏ xuất phát từ thôn San Lùng, xã Bản Xèo, huyện Bát Xát. Cùng với các loại rượu khác như: Rượu Táo Mèo, rượu ngô Bắc Hà, thì rượu San Lùng là đặc sản nổi tiếng Lào Cai. Rượu San Lùng có một mùi thơm lạ của men lá rừng, vị đậm đà của  mùi thóc.",
+    "price": 79000,
     "quantityInStock": 50,
-    "image": "mut-hoa-hong.png",
-    "category": "62417468a4e565283e38feb8"
+    "image": "ruou-san-lung.jpg",
+    "province": "625fc94d4f517e297955c1ef"
   },
   {
-    "name": "Mứt cà chua",
-    "description": "Mứt cà chua Đà Lạt",
-    "price": 200000,
+    "name": "Rượu Ngô Bắc Hà",
+    "desc": "Đến với Bắc Hà nơi đây được khách du lịch trong và ngoài nước ví như một “Cao nguyên trắng”. Hình ảnh đất và người Bắc Hà đã đi vào lời ca, câu hát “Đất Bắc Hà núi non xanh biếc, người Bắc Hà nghĩa nặng tình sâu”. Không chỉ vậy, nơi đây còn sản xuất ra được một loại rượu ngô Bắc Hà mang đầy hương vị bản sắc dân tộc vùng cao, người dân Bắc Hà thường nhắc khách đến chơi rằng \"Khi vào nhớ dốc Trung Đô, khi ra thì nhớ rượu ngô Bắc Hà”, cùng với với men rượu đặc sản Bản phố và cũng là một loại đặc sản Lào Cai.",
+    "price": 99000,
     "quantityInStock": 50,
-    "image": "mut-ca-chua.png",
-    "category": "62417468a4e565283e38feb8"
+    "image": "ruou-ngo-bac-ha-ban-pho.jpg",
+    "province": "625fc94d4f517e297955c1ef"
   },
   {
-    "name": "Mứt khoai lang",
-    "description": "Mứt khoai lang Đà Lạt",
-    "price": 200000,
+    "name": "Bánh Xíu Páo",
+    "desc": "Bánh xíu páo có mùi vị hấp dẫn, có thành phần chất dinh dưỡng cao, như tinh bột, protein…Món bánh xíu được sử dụng lý tưởng trong bữa ăn sáng hay ăn vặt rất tuyệt vời.",
+    "price": 70000,
     "quantityInStock": 50,
-    "image": "mut-khoai-lang.png",
-    "category": "62417468a4e565283e38feb8"
+    "image": "banh-xiu-pao.jpg",
+    "province": "625fc94d4f517e297955c1ed"
   },
   {
-    "name": "Mứt dâu tây",
-    "description": "Mứt dâu tây Đà Lạt",
-    "price": 200000,
+    "name": "Bánh gai bà Thi",
+    "desc": "Bánh gai bà Thi là tên của món bánh gai đặc sản Nam Định nổi tiếng. Với hương vị thơm ngon đặc biệt nên bánh gai bà Thi đã đi vào lòng người dân Nam Định thật nhẹ nhàng.",
+    "price": 150000,
     "quantityInStock": 50,
-    "image": "mut-dau-tay.png",
-    "category": "62417468a4e565283e38feb8"
+    "image": "banh-gai-ba-thi3.png",
+    "province": "625fc94d4f517e297955c1ed"
   },
   {
-    "name": "Mứt dâu tằm",
-    "description": "Mứt dâu tằm Đà Lạt",
-    "price": 200000,
+    "name": "Gạo Tám Hải Hậu",
+    "desc": "Thiên nhiên đất trời đã ưu ái ban tặng cho Hải Hậu giống gạo quý nổi tiếng từ xa xưa. Mặc dù ngày nay công nghệ phát triển, nhiều giống lúa mới được lai tạo và nhập khẩu với giá cả khá cao, thế nhưng gạo tám Hải Hậu vẫn được lòng rất nhiều người.",
+    "price": 150000,
     "quantityInStock": 50,
-    "image": "mut-dau-tam.png",
-    "category": "62417468a4e565283e38feb8"
+    "image": "gao-tam-hai-hau.jpg",
+    "province": "625fc94d4f517e297955c1ed"
   },
   {
-    "name": "Mứt mận",
-    "description": "Mứt mận Đà Lạt",
-    "price": 200000,
+    "name": "Nem nắm Giao Thủy",
+    "desc": "Nem nắm Giao Thủy là sự kết hợp tinh tế của nhiều vị bổ trợ cho nhau. Vị mặn mà của nước mắm kết hợp với chất ngọt từ sớ thịt, tính bùi của thính hòa cùng chút cay nhẹ của tỏi, hơi chát từ lá sung tạo nên món ăn đặc sản Nam Định tuyệt vời.",
+    "price": 100000,
     "quantityInStock": 50,
-    "image": "mut-man.png",
-    "category": "62417468a4e565283e38feb8"
+    "image": "nem-giao-thuy.jpg",
+    "province": "625fc94d4f517e297955c1ed"
   },
   {
-    "name": "Mứt kiwi",
-    "description": "Mứt kiwi Đà Lạt",
-    "price": 200000,
+    "name": "Kẹo dồi Nam Định",
+    "desc": "Kẹo dồi của đặc sản Chính Gốc được lấy trực tiếp tại một trong những cơ sở gia truyền với chất lượng luôn luôn được đảm bảo. Kẹo dồi lừng danh với đặc sản Nam Định hứa hẹn sẽ mang đến hương vị thơm ngon, giòn tan không nơi nào sánh được.",
+    "price": 60000,
     "quantityInStock": 50,
-    "image": "mut-kiwi.png",
-    "category": "62417468a4e565283e38feb8"
+    "image": "keo-doi-hinh.jpg",
+    "province": "625fc94d4f517e297955c1ed"
   },
   {
-    "name": "Bánh tráng nướng",
-    "description": "Bánh tráng nướng Đà Lạt",
+    "name": "Kẹo Sìu Châu",
+    "desc": "Nhắc đến kẹo Sìu Châu là nghĩ ngay đến địa danh Nam Định nổi tiếng khắp cả nước. Cũng là hạt vừng, củ lạc qua bàn tay người con thành Nam đã được sàng lọc, chọn lựa cộng với phương pháp bí truyền đã cho ra đời Kẹo Sìu Châu Nam Định thơm ngon. Cái kẹo lạc vốn bình dị ở mỗi làng quê nay trở nên đặc sắc, thanh tao, giản dị nhưng đậm hương vị quê hương.",
+    "price": 45000,
+    "quantityInStock": 50,
+    "image": "keo-siu-chau.jpg",
+    "province": "625fc94d4f517e297955c1ed"
+  },
+  {
+    "name": "Bánh Nhãn Nam Định",
+    "desc": "Bánh Nhãn Nam Định là món ăn dân dã được truyền lại từ ngàn xưa, qua bao đời nghệ nhân làm bánh mà vị của bánh vẫn ngọt thơm giòn như thủa ban đầu làm ra nó vậy. Là một thứ quà vặt giòn giòn, thơm thơm, ngậy ngậy không thể lẫn với bất cứ loại bánh kẹo nào.",
+    "price": 25000,
+    "quantityInStock": 50,
+    "image": "banh%20nhan.jpg",
+    "province": "625fc94d4f517e297955c1ed"
+  },
+  {
+    "name": "Mắm Hàu Côn Đảo",
+    "desc": "Mắm hàu từ lâu đã trở thành thứ nước chấm không thể thiếu trong bữa ăn hàng ngày của người dân Côn Đảo. Du khách khi ra thăm đảo, lúc về đất liền thường mang theo những chai mắm hàu để làm quà cho người thân và bạn bè thưởng thức.",
     "price": 50000,
     "quantityInStock": 50,
-    "image": "banh-trang-nuong.png",
-    "category": "62417468a4e565283e38feb8"
+    "image": "mam-hau.jpg",
+    "province": "625fc94d4f517e297955c1f1"
   },
   {
-    "name": "Nem nướng",
-    "description": "Nem nướng Đà Lạt",
-    "price": 50000,
+    "name": "Bánh Bông Lan Trứng Muối",
+    "desc": "Bánh bông lan trứng muối là sự kết tinh của vị mằn mặn bùi bùi của trứng muối và chà bông, thêm vào đó là miếng phô mai hòa cùng vị ngọt thanh của chiếc bánh khiến ai cũng say mê.",
+    "price": 90000,
     "quantityInStock": 50,
-    "image": "nem-nuong.png",
-    "category": "62417468a4e565283e38feb8"
+    "image": "bang-bong-lan-trung-muoi.jpg",
+    "province": "625fc94d4f517e297955c1f1"
   },
   {
-    "name": "Bánh canh",
-    "description": "Bánh canh Đà Lạt",
-    "price": 50000,
+    "name": "Mứt Hạt Bàng Côn Đảo",
+    "desc": "Đến Vũng Tàu, bên cạnh những món hải sản thì mứt hạt bàng Côn Đảo cũng là một món đặc sản mà những người du khách khi đến đây cũng đều mua về làm quà cho người thân, bạn bè. Gọi là mứt nhưng thật sự đó là hạt bàng rang với muối hoặc với đường tùy vào khẩu vị, vị ngọt của đường hay vị mặn của muối hòa lẫn vị bùi và béo của hạt bàng ở đầu lưỡi khiến người ăn không thể nào quên",
+    "price": 70000,
     "quantityInStock": 50,
-    "image": "banh-canh.png",
-    "category": "62417468a4e565283e38feb8"
-  },
-  {
-    "name": "Bánh mì xíu mại",
-    "description": "Bánh mì xíu mại Đà Lạt",
-    "price": 50000,
-    "quantityInStock": 50,
-    "image": "banh-mi-xiu-mai.png",
-    "category": "62417468a4e565283e38feb8"
-  },
-  {
-    "name": "Ốc nhồi thịt",
-    "description": "Ốc nhồi thịt Đà Lạt",
-    "price": 50000,
-    "quantityInStock": 50,
-    "image": "oc-nhoi-thit.png",
-    "category": "62417468a4e565283e38feb8"
-  },
-  {
-    "name": "Lẩu bò Ba Toa",
-    "description": "Lẩu bò Ba Toa Đà Lạt",
-    "price": 50000,
-    "quantityInStock": 50,
-    "image": "lau-ba-toa.png",
-    "category": "62417468a4e565283e38feb8"
-  },
-  {
-    "name": "Canh Atiso hầm chân giò heo",
-    "description": "Canh Atiso hầm chân giò heo Đà Lạt",
-    "price": 50000,
-    "quantityInStock": 50,
-    "image": "canh-atiso.png",
-    "category": "62417468a4e565283e38feb8"
-  },
-  {
-    "name": "Bánh căn",
-    "description": "Bánh căn Đà Lạt",
-    "price": 50000,
-    "quantityInStock": 50,
-    "image": "banh-can.png",
-    "category": "62417468a4e565283e38feb8"
-  },
-  {
-    "name": "Bánh ướt lòng gà",
-    "description": "Bánh ướt lòng gà Đà Lạt",
-    "price": 50000,
-    "quantityInStock": 50,
-    "image": "banh-uot.png",
-    "category": "62417468a4e565283e38feb8"
-  },
-  {
-    "name": "Kem bơ",
-    "description": "Kem bơ Đà Lạt",
-    "price": 50000,
-    "quantityInStock": 50,
-    "image": "kem-bo.png",
-    "category": "62417468a4e565283e38feb8"
-  },
-  {
-    "name": "Rượu vang",
-    "description": "Rượu vang Đà Lạt",
-    "price": 500000,
-    "quantityInStock": 50,
-    "image": "ruou-vang.png",
-    "category": "62417468a4e565283e38feb7"
-  },
-  {
-    "name": "Rượu cần",
-    "description": "Rượu cần Đà Lạt",
-    "price": 500000,
-    "quantityInStock": 50,
-    "image": "ruou-can.png",
-    "category": "62417468a4e565283e38feb7"
-  },
-  {
-    "name": "Nước cốt dâu tằm",
-    "description": "Nước cốt dâu tằm Đà Lạt",
-    "price": 500000,
-    "quantityInStock": 50,
-    "image": "nuoc-cot-dau-tam.png",
-    "category": "62417468a4e565283e38feb7"
-  },
-  {
-    "name": "Nước cốt dâu tây",
-    "description": "Nước cốt dâu tây Đà Lạt",
-    "price": 500000,
-    "quantityInStock": 50,
-    "image": "nuoc-cot-dau-tay.png",
-    "category": "62417468a4e565283e38feb7"
-  },
-  {
-    "name": "Cà phê Cầu Đất",
-    "description": "Cà phê Cầu Đất Đà Lạt",
-    "price": 500000,
-    "quantityInStock": 50,
-    "image": "cf-cau-dat.png",
-    "category": "62417468a4e565283e38feb7"
-  },
-  {
-    "name": "Trà Bảo Lộc",
-    "description": "Trà Bảo Lộc Đà Lạt",
-    "price": 500000,
-    "quantityInStock": 50,
-    "image": "tra-bao-loc.png",
-    "category": "62417468a4e565283e38feb7"
-  },
-  {
-    "name": "Mít sấy",
-    "description": "Mít sấy Đà Lạt",
-    "price": 300000,
-    "quantityInStock": 50,
-    "image": "mit-say.png",
-    "category": "62417468a4e565283e38feb8"
-  },
-  {
-    "name": "Rau củ sấy",
-    "description": "Rau củ sấy Đà Lạt",
-    "price": 300000,
-    "quantityInStock": 50,
-    "image": "rau-cu-say.png",
-    "category": "62417468a4e565283e38feb8"
-  },
-  {
-    "name": "Thổ cẩm",
-    "description": "Thổ cẩm Đà Lạt",
-    "price": 1000000,
-    "quantityInStock": 50,
-    "image": "tho-cam.png",
-    "category": "62417468a4e565283e38feb9"
-  },
-  {
-    "name": "Tranh thêu tay",
-    "description": "Tranh thêu tay Đà Lạt",
-    "price": 1000000,
-    "quantityInStock": 50,
-    "image": "tranh-theu-tay.png",
-    "category": "62417468a4e565283e38feb9"
-  },
-  {
-    "name": "Tranh đính đá",
-    "description": "Tranh đính đá Đà Lạt",
-    "price": 1000000,
-    "quantityInStock": 50,
-    "image": "tranh-dinh-da.png",
-    "category": "62417468a4e565283e38feb9"
-  },
-  {
-    "name": "Tranh khắc gỗ",
-    "description": "Tranh khắc gỗ Đà Lạt",
-    "price": 1000000,
-    "quantityInStock": 50,
-    "image": "tranh-khac-go.png",
-    "category": "62417468a4e565283e38feb9"
+    "image": "mut%20hat%20bang.jpg",
+    "province": "625fc94d4f517e297955c1f1"
   }
 ]

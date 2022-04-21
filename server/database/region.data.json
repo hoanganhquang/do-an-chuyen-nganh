@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Miền Bắc",
+    "provinces": [
+      "625fc94d4f517e297955c1ec",
+      "625fc94d4f517e297955c1eb",
+      "625fc94d4f517e297955c1ee",
+      "625fc94d4f517e297955c1ef",
+      "625fc94d4f517e297955c1ed"
+    ]
+  },
+  {
+    "name": "Miền Trung",
+    "provinces": [
+      "625fcab801efeac397120f59",
+      "625fcab801efeac397120f58",
+      "625fcab801efeac397120f5c",
+      "625fcab801efeac397120f5b",
+      "625fcab801efeac397120f5a"
+    ]
+  },
+  {
+    "name": "Miền Nam",
+    "provinces": [
+      "625fc94d4f517e297955c1ed",
+      "625fc94d4f517e297955c1f1",
+      "625fc94d4f517e297955c1f2",
+      "625fc94d4f517e297955c1f0",
+      "625fc94d4f517e297955c1f3"
+    ]
+  },
+  {
+    "name": "Tây Nguyên",
+    "provinces": [
+      "625fc94d4f517e297955c1f7",
+      "625fc94d4f517e297955c1f6",
+      "625fc94d4f517e297955c1f5"
+    ]
+  },
+  {
+    "name": "Miền Tây",
+    "provinces": [
+      "625fc94d4f517e297955c1f4",
+      "625fc94d4f517e297955c1f8",
+      "625fc94d4f517e297955c1fb",
+      "625fc94d4f517e297955c1fa",
+      "625fc94d4f517e297955c1fc"
+    ]
+  }
+]
