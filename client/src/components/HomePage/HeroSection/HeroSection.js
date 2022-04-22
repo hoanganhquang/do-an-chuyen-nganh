@@ -6,7 +6,9 @@ function HeroSection() {
       <div className="container">
         <div className="hero-main">
           <div className="content" data-aos="fade-right">
-            <h1 className="title">Chào Mừng Đến Với Cửa Hàng Đặc Sản Đà Lạt</h1>
+            <h1 className="title">
+              Chào Mừng Đến Với Cửa Hàng Đặc Sản Địa Phương
+            </h1>
 
             <div className="search-form">
               <input type="text" className="input" />
@@ -15,7 +17,7 @@ function HeroSection() {
 
             <p className="desc">
               Đến với cửa hàng bạn có thể tìm kiếm, mua sắm các loại đặc sản ở
-              Đà Lạt với các sản phẩm đa dạng phong phú
+              các địa phương với các sản phẩm đa dạng phong phú
             </p>
           </div>
           <div className="hero-img" data-aos="fade-left">
