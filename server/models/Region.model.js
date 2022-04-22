@@ -13,7 +13,10 @@ const RegionSchema = new mongoose.Schema({
 });
 
 RegionSchema.pre(/^find/, function (next) {
-  this.populate("provinces");
+  this.populate({
+    path: "provinces",
+    select: "-_id -__v",
+  });
 
   next();
 });

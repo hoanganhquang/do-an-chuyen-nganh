@@ -1238,5 +1238,157 @@
     "quantityInStock": 50,
     "image": "banh-trang-hoa-da.jpg",
     "province": "62622434f64d097548ccacfb"
+  },
+  {
+    "name": "Trái cây sấy ngon ngon ",
+    "desc": "Trái cây sấy ngon ngon  đặc sản ngon đậm chất và là món quà ý nghĩa dành cho người thân, bạn bè. Ngoài ra trái cây sấy mang hương vị tự nhiên mà không thể nào chối từ, khi thưởng thức một lần lại muốn thưởng thức nhiều lần hơn nữa.",
+    "price": 75000,
+    "quantityInStock": 50,
+    "image": "anh dai dien trai cay say.JPG",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Nước cốt phúc bồn tử",
+    "desc": "Nước cốt phúc bồn tử với hương vị thơm ngon, vị ngọt đặc trưng của quả phúc bồn tử đã trở thành một thức uống đặc sản Đà Lạt được nhiều người ưa chuộng sử dụng.",
+    "price": 70000,
+    "quantityInStock": 50,
+    "image": "nuoc-cot-phuc-bon-tu.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Bột CaCao Nguyên Chất",
+    "desc": "Bột Cacao nguyên chất là thực phẩm giàu chất dinh dưỡng được làm từ hạt cacao xay nhuyễn bằng máy móc công nghệ hiện đại, không có chất bảo quản, hay hóa chất có hại cho sức khỏe. Cacao có màu nâu sáng đến nâu đỏ, cacao có hương vị tự nhiên, thơm nồng, hơi đắng, nhưng uống lại thơm ngon và đậm đà hơn.",
+    "price": 150000,
+    "quantityInStock": 50,
+    "image": "bot-ca-cao.png",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Cà Chua Cherry Sấy",
+    "desc": "Cà chua cherry sấy có rất nhiều công dụng như: Thanh nhiệt giải độc, lương huyết bình can và hạ huyết áp. Nó là thực phẩm rất giàu vitamin C và P, nếu ăn thường xuyên mỗi ngày cà chua cherry sẽ có khả năng phòng chống cao huyết áp rất tốt, đặc biệt là khi có biến chứng xuất huyết đáy mắt. Ngoài ra cà chua cherry sấy còn có thể bảo vệ nam giới khỏi nguy cơ bị ung thư tuyến tiền liệt.",
+    "price": 28000,
+    "quantityInStock": 50,
+    "image": "ca-chua-cherry1.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Trà Atisô ",
+    "desc": "Trà Atisô Đà Lạt đã từ lâu được biết đến là một thực phẩm quí – được làm từ hoa Atisô, giúp giải độc cơ thể, mát gan, bồi bổ sức khoẻ, kích thích tiêu hoá, nhuận tràng, an thần, lọc máu, trị ghẻ ngứa, mụn nhọt và làm đẹp da từ bên trong. Atisô đặc biệt tốt cho những người bị nóng trong người, ngoài ra khi uống Atisô còn giúp dễ ngủ hơn.",
+    "price": 100000,
+    "quantityInStock": 50,
+    "image": "tra-atiso.png",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Me sấy khô",
+    "desc": "Me là thực phẩm giúp ta có bữa ăn ngon, vị chua chua ngọt ngọt rất hấp dẫn, không dừng lại ở đó. Trái me còn có tác dụng giảm sốt và chống lại cảm lạnh. Giúp cơ thể tiêu hóa thức ăn tốt hơn.",
+    "price": 130000,
+    "quantityInStock": 50,
+    "image": "me-say-cay-dac-biet%20(1).jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Trà Ô Long",
+    "desc": "Trà Ô Long là đặc sản làm quà được nhiều người lựa chọn. Không chỉ là thức uống mà trà Ô Long còn là một vị thuốc chữa bệnh rất tốt.",
+    "price": 300000,
+    "quantityInStock": 50,
+    "image": "tra-o-long.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Sâm Ngọc Linh Đà Lạt",
+    "desc": "Sâm Ngọc Linh là một trong những loại sâm quý hiếm nhất Việt Nam, về dược phẩm xếp trên sâm Hàn Quốc, Mỹ và Trung Quốc, được giới y học mệnh danh là “Nhất Đẳng Hùng Sâm”",
+    "price": 1200,
+    "quantityInStock": 50,
+    "image": "sam-ngoc-linh.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Bột Trà xanh Bảo Lộc",
+    "desc": "Đặc sản Chính Gốc chuyên sản xuất và phân phối sỉ lẻ các loại bột trà xanh 100% nguồn gốc từ thiên nhiên. Phục vụ cho việc đắp mặt nạ chăm sóc da và chế biến các món ăn thức uống bổ dưỡng. Được UBND tỉnh Lâm Đồng chứng nhận cơ sở sản xuất đạt tiêu chuẩn an toàn thực phẩm.",
+    "price": 200000,
+    "quantityInStock": 50,
+    "image": "tra-xanh.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Rượu Mật Ong Đà Lạt",
+    "desc": "Rượu Mật Ong là một loại đặc sản Đà Lạt - Lâm Đồng vô cùng nổi tiếng được rất nhiều du khách ưa chuộng chính vì hương vị thơm ngon đặc trưng của nó. Rượu mật ong thường được du khách mua về làm quà biếu cho bạn bè người thân khi du lịch nơi đây.",
+    "price": 250000,
+    "quantityInStock": 50,
+    "image": "ruou-mat-ong.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Khoai lang sấy",
+    "desc": "Khoai lang là một trong số ít loại củ được các chuyên gia dinh dưỡng đánh giá là “thực phẩm cân bằng dinh dưỡng nhất”, trong khoai lang sấy còn chứa rất nhiều chất dinh dưỡng quý giá đối với sức khỏe như: tinh bột, các acid amin, beta carotene, vitamin C, B1...",
+    "price": 100000,
+    "quantityInStock": 50,
+    "image": "khoai-lang-say11.png",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Thổ Sâm Đà Lạt",
+    "desc": "Thổ sâm là cây thảo, cao 30-50 cm, thân hình trụ nhẵn, phân cành ngay từ gốc. Có công dụng chữa các triệu chứng khí huyết suy nhược, mệt mỏi, tiêu chảy, tiểu tiện nhiều.",
+    "price": 120000,
+    "quantityInStock": 50,
+    "image": "sam-dat.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Đẳng Sâm Đà Lạt",
+    "desc": "Đẳng sâm có vị ngọt, tính bình, quy vào 2 kinh tùy và phế, được dùng chữa tỳ vị suy kém, phế khí hư nhược, đại tiện lỏng, kém ăn, mệt mỏi, suy nhược do ốm lâu, ho, đau dạ dày, sa tử cung, thiếu máu, băng huyết, viêm thận, đau phù.",
+    "price": 350000,
+    "quantityInStock": 50,
+    "image": "dang-sam.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Mít Sấy Ngon Ngon",
+    "desc": "Sản phẩm mít sấy khô Đà Lạt có màu sắc, hương vị đặc trưng của múi mít tươi, giòn tan ngay từ lần thử đầu tiên luôn mang một hương vị đậm đà của đặc sản Tây Nguyên. Đặc biệt các chất dinh dưỡng được bảo tồn, đây là yếu tố giúp người tiêu dùng có thể thưởng thức hương vị của mít nhiệt đới quanh năm.",
+    "price": 95000,
+    "quantityInStock": 50,
+    "image": "mit-say-4.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Rượu cần Chu Ru",
+    "desc": "Nhắc đến Tây Nguyên không ai quên nhắc đến rượu cần với hương vị làm say mê lòng người, ai đã thử thì khó mà kìm lòng quay lại nơi đây. Rượu cần có rất nhiều loại, mỗi dân tộc, mỗi vùng miền có một bí quyết chế biến khác nhau gắn liền với tên gọi của nó như rượu cần Tây Nguyên có rượu cần Y Miên - đặc sản DakLak, rượu cần Chu Ru - đặc sản Lâm Đồng hay rượu cần Hòa Bình ở đặc sản miền Bắc,... Trong đó rượu cần Chu Ru được làm từ một loại men rất đặc biệt, cần sự kỳ công của người làm nên rượu.",
+    "price": 200000,
+    "quantityInStock": 50,
+    "image": "binh-ruou-can.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Mứt hồng dẻo Đà Lạt",
+    "desc": "Đà Lạt cũng là xứ sở của nhiều loại mứt đặc sản với đủ màu sắc và hương vị ngọt thơm hiếm thấy. Đến Đà Lạt, du khách khó có thể cưỡng lại vẻ hấp dẫn của mứt dâu tây đỏ thắm, mứt khoai lang vàng rộm, mứt hồng dẻo,... Thử nếm một miếng hồng dẻo, bạn sẽ từ từ cảm nhận được vị ngọt thanh nơi đầu lưỡi, chất dẻo dai của đặc sản Đà Lạt nổi tiếng.",
+    "price": 150000,
+    "quantityInStock": 50,
+    "image": "mut-hong-deo.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Trái cây sấy",
+    "desc": "Trái cây sấy chứa chứa nhiều vitamin và khoáng chất tốt cho cơ thể. Là món ăn quen thuộc của rất nhiều các bạn trẻ. Trái cây sấy là loại trái cây ở dạng khô nhưng vẫn đảm bảo chất lượng không bị biến đổi.",
+    "price": 35000,
+    "quantityInStock": 50,
+    "image": "traicay250.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Rượu vang Đà Lạt",
+    "desc": "Rượu vang Đà Lạt là loại rượu ngon thuộc top 10 rượu nổi tiếng nhất Việt Nam. Là đặc sản làm quà phù hợp với mọi tầng lớp vì rượu vang được chia thành nhiều loại khác nhau tùy theo chất lượng rượu.",
+    "price": 300000,
+    "quantityInStock": 50,
+    "image": "ruou-vang-da-lat2.jpg",
+    "province": "62622434f64d097548ccad07"
+  },
+  {
+    "name": "Mứt Dâu Tây Đà Lạt",
+    "desc": "Mứt Dâu Tây là một loại đặc sản không xa lạ gì đối với du khách khi đến Đà Lạt “Thành phố mùa xuân vĩnh cửu”. Những ai đã từng đặt chân đến Lâm Đồng thì bạn đừng nên bỏ lỡ món ăn đặc sản Đà Lạt - Lâm Đồng nổi tiếng này.",
+    "price": 39000,
+    "quantityInStock": 50,
+    "image": "mut-dau-tay.jpg",
+    "province": "62622434f64d097548ccad07"
   }
 ]

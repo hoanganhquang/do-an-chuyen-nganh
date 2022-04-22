@@ -9,7 +9,7 @@ const Region = require("../models/Region.model");
 connectDb();
 
 const data = JSON.parse(
-  fs.readFileSync(`${__dirname}/province.data.json`, "utf-8")
+  fs.readFileSync(`${__dirname}/region.data.json`, "utf-8")
 );
 
 const importData = async () => {
