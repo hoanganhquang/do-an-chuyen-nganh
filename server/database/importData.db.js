@@ -3,8 +3,8 @@ const connectDb = require("./config.db");
 const fs = require("fs");
 
 // const Product = require("../models/Product.model");
-const Province = require("../models/Province.model");
-// const Region = require("../models/Region.model");
+// const Province = require("../models/Province.model");
+const Region = require("../models/Region.model");
 
 connectDb();
 
@@ -14,7 +14,7 @@ const data = JSON.parse(
 
 const importData = async () => {
   try {
-    await Province.create(data);
+    await Region.create(data);
     console.log("Success");
   } catch (error) {
     console.log(error);
