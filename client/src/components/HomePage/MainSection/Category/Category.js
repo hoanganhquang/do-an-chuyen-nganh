@@ -6,6 +6,16 @@ import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 
 function Category() {
+  useEffect(() => {
+    const categoryItems = document.querySelectorAll(".text-box");
+
+    categoryItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        item.parentElement.classList.toggle("active");
+      });
+    });
+  });
+
   return (
     <div className="category" data-aos="fade-right">
       <div className="category-box">
