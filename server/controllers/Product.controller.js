@@ -16,3 +16,8 @@ exports.deleteProduct = async (req, res) => {
 exports.updateProduct = async (req, res) => {
   await crud.update(Product, req, res);
 };
+
+exports.getOne = async (req, res) => {
+  const query = { province: req.params.province };
+  await crud.getByQuery(Product, res, query);
+};

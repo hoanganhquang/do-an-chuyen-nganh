@@ -103,7 +103,7 @@ exports.statistics = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    res.json({
+    res.status(404).json({
       status: "Failure",
     });
   }

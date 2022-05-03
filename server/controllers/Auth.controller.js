@@ -30,7 +30,7 @@ exports.signUp = async (req, res) => {
     createSendToken(newUser, 200, req, res);
   } catch (error) {
     console.log(error);
-    res.json({
+    res.status(404).json({
       status: "Failure",
       message: "Không thành công",
     });
@@ -54,7 +54,7 @@ exports.signIn = async (req, res) => {
 
     createSendToken(user, 200, req, res);
   } catch (error) {
-    res.json({
+    res.status(404).json({
       status: "failure",
       message: error,
     });
@@ -89,7 +89,7 @@ exports.protect = async (req, res, next) => {
       message = "Không được cấp quyền";
     }
 
-    res.json({
+    res.status(401).json({
       status: "failure",
       message,
     });
@@ -102,7 +102,7 @@ exports.restrict = async (req, res, next) => {
 
     next();
   } catch (error) {
-    res.json({
+    res.status(401).json({
       status: "failure",
       message: error,
     });

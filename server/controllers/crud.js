@@ -8,7 +8,7 @@ exports.insert = async (model, req, res, err) => {
       status: "success",
     });
   } catch (error) {
-    res.json({
+    res.status(404).json({
       status: "failure",
       message: "Không thành công",
     });
@@ -25,7 +25,7 @@ exports.delete = async (model, req, res) => {
       status: "success",
     });
   } catch (error) {
-    res.json({
+    res.status(404).json({
       status: "failure",
       message: "Không thành công",
     });
@@ -44,7 +44,7 @@ exports.update = async (model, req, res) => {
       status: "success",
     });
   } catch (error) {
-    res.json({
+    res.status(404).json({
       status: "failure",
       message: "Không thành công",
     });
@@ -66,7 +66,7 @@ exports.getAll = async (model, req, res) => {
       data,
     });
   } catch (error) {
-    console.log(error);
+    console.status(404).log(error);
     res.json({
       status: "failure",
       message: "Không thành công",
@@ -83,7 +83,23 @@ exports.getOne = async (model, res, query) => {
       data,
     });
   } catch (error) {
+    res.status(404).json({
+      status: "failure",
+      message: "Không thành công",
+    });
+  }
+};
+
+exports.getByQuery = async (model, res, query) => {
+  try {
+    const data = await model.find(query);
+
     res.json({
+      status: "success",
+      data,
+    });
+  } catch (error) {
+    res.status(404).json({
       status: "failure",
       message: "Không thành công",
     });
