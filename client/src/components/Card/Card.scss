@@ -1,98 +1,96 @@
 @use ".././../styles/variables" as v;
 
-.card{
+.card {
   display: flex;
   padding-top: 160px;
   padding-bottom: 160px;
   justify-content: space-between;
   letter-spacing: 0.3px;
-  .card-content{
-      width: 70%;
-      .card-title{
-          font-size: 1.5625rem;
-          padding-bottom: 20px;
-      }
-      table {
-        width: 90%;
-        border: none;
-        border-collapse: collapse;
-        border-radius: 10px 10px 0px 0px;
-        overflow: hidden;
-        thead{
-            th{
-                font-weight: normal;
-                font-size: 1rem;
-            }
-        }
-        .table-header {
-          background-color: v.$primary-color1;
-          height: 50px;
-        }
-  
-        .table-row {
-          text-align: center;
-          height: 70px;
-          border-bottom: 1px solid v.$grey-text-color3;;
-          border-right: 1px solid v.$grey-text-color3;;
-          border-left: 2px solid v.$grey-text-color3;;
-          .quantity{
-              display: flex;
-              justify-content: space-evenly;
-          }
-          .btn-delete{
-              width: 35px;
-          }
-          .btn-delete:hover{
-              border: 1px solid v.$primary-color;
-          }
-          input{
-              width: 35px;
-              border: none;
-              
-          }
+  .card-content {
+    width: 70%;
+    .card-title {
+      font-size: 1.5625rem;
+      padding-bottom: 20px;
+    }
+    table {
+      width: 90%;
+      border: none;
+      border-collapse: collapse;
+      border-radius: 10px 10px 0px 0px;
+      overflow: hidden;
+      thead {
+        th {
+          font-weight: normal;
+          font-size: 1rem;
         }
       }
+      .table-header {
+        background-color: v.$primary-color1;
+        border: 1px solid v.$primary-color1;
+        height: 50px;
+      }
+
+      .table-row {
+        text-align: center;
+        height: 70px;
+        border-bottom: 1px solid v.$grey-text-color3;
+        border-left: 1px solid v.$grey-text-color3;
+        border-right: 1px solid v.$grey-text-color3;
+        .quantity {
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .btn-delete {
+          width: 35px;
+        }
+        .btn-delete:hover {
+          border: 1px solid v.$primary-color;
+        }
+        input {
+          width: 35px;
+          border: none;
+        }
+      }
+    }
   }
-.card-totals{
+  .card-totals {
     width: 30%;
     padding-top: 20px;
-    .card-header{
-        background-color: v.$primary-color;
-        height: 50px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        text-align: left;
-        h3 {
-            color: v.$white-color;
-            font-size: 1.4375rem;
-            line-height: 45px;
-            padding: 5px 0px 0px 20px;
-          }
+    .card-header {
+      background-color: v.$primary-color;
+      height: 50px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-align: left;
+      h3 {
+        color: v.$white-color;
+        font-size: 1.4375rem;
+        line-height: 45px;
+        padding: 5px 0px 0px 20px;
+      }
     }
-    .card-items{
-        height: 40px;
-        border: 1px solid v.$primary-color;
-        display: flex;
-        justify-content: space-between;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        p{
-            padding: 10px 20px 10px 20px;
-            color: v.$grey-text-color1;
-            font-weight: normal;
-        }
+    .card-items {
+      height: 40px;
+      border: 1px solid v.$primary-color;
+      display: flex;
+      justify-content: space-between;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      p {
+        padding: 10px 20px 10px 20px;
+        color: v.$grey-text-color1;
+        font-weight: normal;
+      }
     }
-    .btn-checkout{
-        width: 100%;
-        padding: 10px;
-        margin-top: 20px;
-        border-radius: 10px;
+    .btn-checkout {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 10px;
     }
-}
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
-
-   opacity: 1;
-
-}
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+  }
 }
