@@ -4,15 +4,26 @@ import card from "../../assets/icons/Card.svg";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { signOut } from "../../store/AuthSlice";
 
 function Header() {
   const [headerScrollStyle, setHeaderScrollStyle] = useState(false);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setHeaderScrollStyle(window.scrollY > 150);
     });
   });
+
+  const handleLogOut = () => {
+    localStorage.removeItem("token");
+    dispatch(signOut());
+    navigate("/auth");
+  };
 
   return (
     <header className={clsx({ scrollShow: headerScrollStyle })}>
@@ -29,10 +40,8 @@ function Header() {
               <li className="item">
                 <a href="/#products">Sản phẩm</a>
               </li>
-              <li className="item">
-                <a href="" style={{ color: "red" }}>
-                  Đăng xuất
-                </a>
+              <li className="item" onClick={handleLogOut}>
+                <a style={{ color: "red" }}>Đăng xuất</a>
               </li>
             </ul>
           </div>
