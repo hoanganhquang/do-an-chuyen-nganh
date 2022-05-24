@@ -7,12 +7,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function HomePage() {
-  const settings = {
+  var settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
   };
   return (
     <main>
@@ -24,10 +26,10 @@ function HomePage() {
               <img src={require("../../assets/images/banner1.jpg")} alt="" />
             </div>
             <div>
-              <img src={require("../../assets/images/banner.jpg")} alt="" />
+              <img src={require("../../assets/images/banner3.jpg")} alt="" />
             </div>
             <div>
-              <img src={require("../../assets/images/banner.jpg")} alt="" />
+              <img src={require("../../assets/images/banner2.jpg")} alt="" />
             </div>
           </Slider>
         </div>

@@ -2,10 +2,22 @@ import Subscribe from "../Subscribe/Subscribe";
 import "./Category.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-function Category() {
+function Category(props) {
+  const [regions, setRegions] = useState([]);
+
+  useEffect(async () => {
+    try {
+      const res = await axios.get(`${process.env.REACT_APP_API}/region`);
+
+      setRegions(res.data.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
   useEffect(() => {
     const categoryItems = document.querySelectorAll(".text-box");
 
@@ -24,46 +36,34 @@ function Category() {
         </div>
         <div className="category-body">
           <div className="category-list">
-            <div className="category-item">
-              <div className="text-box">
-                Miền Bắc
-                <FontAwesomeIcon icon={faCaretRight} />
-              </div>
-              <ul className="province-list">
-                <li>
-                  <a>Hà Nội</a>
-                </li>
-                <li>
-                  <a>Hà Nội</a>
-                </li>
-                <li>
-                  <a>Hà Nội</a>
-                </li>
-              </ul>
-            </div>
-            <div className="category-item ">
-              <div className="text-box">
-                Miền Bắc
-                <FontAwesomeIcon icon={faCaretRight} />
-              </div>
-              <ul className="province-list">
-                <li>
-                  <a>Hà Nội</a>
-                </li>
-                <li>
-                  <a>Hà Nội</a>
-                </li>
-                <li>
-                  <a>Hà Nội</a>
-                </li>
-                <li>
-                  <a>Hà Nội</a>
-                </li>
-                <li>
-                  <a>Hà Nội</a>
-                </li>
-              </ul>
-            </div>
+            {regions.map((region) => {
+              return (
+                <div className="category-item" key={region._id}>
+                  <div className="text-box">
+                    {region.name}
+                    <FontAwesomeIcon icon={faCaretRight} />
+                  </div>
+                  <ul className="province-list">
+                    {region.provinces.map((province) => {
+                      return (
+                        <li
+                          key={province._id}
+                          onClick={() => {
+                            props.onSetProducts(
+                              province._id,
+                              province.name,
+                              region.name
+                            );
+                          }}
+                        >
+                          <a>{province.name}</a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

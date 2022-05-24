@@ -1,12 +1,16 @@
 import "./Header.scss";
 import card from "../../assets/icons/Card.svg";
+import logo from "../../assets/icons/Logo.svg";
 
 import clsx from "clsx";
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { signOut } from "../../store/AuthSlice";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-regular-svg-icons";
 
 function Header() {
   const [headerScrollStyle, setHeaderScrollStyle] = useState(false);
@@ -14,57 +18,100 @@ function Header() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const scrollCheck = () => {
       setHeaderScrollStyle(window.scrollY > 150);
-    });
-  });
+    };
+
+    window.addEventListener("scroll", scrollCheck);
+
+    return () => {
+      window.removeEventListener("scroll", scrollCheck);
+    };
+  }, []);
+
+  useEffect(async () => {
+    try {
+      const res = await axios.get(`${process.env.REACT_APP_API}/cart/`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      if (res.data.data.products.length > 0) {
+        setCartItemQuan(res.data.data.products.length);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }, [isLoggedin]);
 
   const handleNavigateCard = () => {
-    navigate("/card");
+    navigate("/cart");
   };
 
   const handleNavigateAccount = () => {
     navigate("/profile-page/dashboard");
-    const handleLogOut = () => {
-      localStorage.removeItem("token");
-      dispatch(signOut());
-      navigate("/auth");
-    };
+  };
 
-    return (
-      <header className={clsx({ scrollShow: headerScrollStyle })}>
-        <div className="container">
-          <div className="header-main">
-            <div className="nav">
-              <div className="img-box">
-                <img src={require("../../assets/images/Logo.png")} alt="" />
-              </div>
-              <ul className="menu">
-                <li className="item item--active">
-                  <NavLink to="/">Trang chủ</NavLink>
+  const handleNavigateDashboardAdmin = () => {
+    navigate("/admin");
+  };
+
+  const handleNavigateProductSection = () => {
+    navigate("/", { state: { scroll: true } });
+  };
+
+  const handleLogOut = () => {
+    localStorage.removeItem("token");
+    dispatch(signOut());
+    navigate("/auth");
+  };
+
+  return (
+    <header className={clsx({ scrollShow: headerScrollStyle })}>
+      <div className="container">
+        <div className="header-main">
+          <div className="nav">
+            <div className="img-box logoBox">
+              <img src={logo} alt="" />
+              <div className="title">TFoods</div>
+            </div>
+            <ul className="menu">
+              <li className="item item--active">
+                <NavLink to="/">Trang chủ</NavLink>
+              </li>
+              <li className="item" onClick={handleNavigateProductSection}>
+                <a>Sản phẩm</a>
+              </li>
+              {user.role == "Admin" && (
+                <li className="item" onClick={handleNavigateDashboardAdmin}>
+                  <a>Quản lý</a>
                 </li>
-                <li className="item">
-                  <a href="/#products">Sản phẩm</a>
-                </li>
+              )}
+              {isLoggedin && (
                 <li className="item" onClick={handleLogOut}>
-                  <a style={{ color: "red" }}>Đăng xuất</a>
+                  <a href="" style={{ color: "red" }}>
+                    Đăng xuất
+                  </a>
                 </li>
-              </ul>
+              )}
+            </ul>
+          </div>
+          <div className="features">
+            {/* <p>
+              <FontAwesomeIcon icon={faUser} />
+            </p> */}
+            <div className="img-box" onClick={handleNavigateCard}>
+              <img src={card} alt="" />
+              {/* {isLoggedin && <div className="number">{cartItemQuan}</div>} */}
             </div>
-            <div className="features">
-              <div className="img-box" onClick={handleNavigateCard}>
-                <img src={card} alt="" />
-                {/* <div className="number">5</div> */}
-              </div>
-              <button className="primaryBtn" onClick={handleNavigateAccount}>
-                Tài khoản
-              </button>
-            </div>
+            <button className="primaryBtn" onClick={handleNavigateAccount}>
+              Tài khoản
+            </button>
           </div>
         </div>
-      </header>
-    );
-  };
+      </div>
+    </header>
+  );
 }
 
 export default Header;

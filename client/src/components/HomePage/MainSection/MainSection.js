@@ -1,15 +1,54 @@
 import "./MainSection.scss";
 import Category from "./Category/Category";
 import Product from "./Product/Product";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { useLocation } from "react-router-dom";
+import BestSeller from "./BestSeller/BestSeller";
 
 function MainSection() {
+  const [products, setProducts] = useState([]);
+  const [region, setRegion] = useState({});
+  const location = useLocation();
+
+  const handleSetProvince = async (provinceId, provinceName, region) => {
+    setRegion({ provinceId, provinceName, region });
+  };
+
+  useEffect(async () => {
+    if (location.state) {
+      window.scrollTo(0, 1045);
+    }
+  }, []);
+
+  useEffect(async () => {
+    if (region.provinceId) {
+      try {
+        const res = await axios.get(
+          `${process.env.REACT_APP_API}/product/province/${region.provinceId}`
+        );
+
+        setProducts(res.data.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  }, [region.provinceId]);
+
   return (
     <>
+      <BestSeller />
       <section className="main" id="products">
         <div className="container">
           <div className="main-main">
-            <Category />
-            <Product />
+            <Category onSetProducts={handleSetProvince} />
+            <Product
+              products={products}
+              region={{
+                regionName: region.region,
+                provinceName: region.provinceName,
+              }}
+            />
           </div>
         </div>
       </section>

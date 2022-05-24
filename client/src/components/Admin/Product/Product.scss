@@ -17,8 +17,28 @@
     }
   }
 
+  select.input {
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   table {
     width: 100%;
+
+    .name {
+      width: 300px;
+    }
+
+    .func {
+      width: 65px;
+
+      span {
+        &:first-child {
+          margin-right: 3px;
+        }
+      }
+    }
 
     .img {
       img {
@@ -28,9 +48,29 @@
       }
     }
 
+    thead {
+      th {
+        width: 166px;
+      }
+    }
+
     tbody {
       tr {
         height: 700px;
+
+        td {
+          width: 166px;
+        }
+
+        td.desc {
+          span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 120px;
+            display: inline-block;
+          }
+        }
       }
     }
   }

@@ -18,14 +18,14 @@ export default function SideBar() {
             Thống kê
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
             to="/admin/categories"
           >
             Loại sản phẩm
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
