@@ -1,6 +1,9 @@
-import "../AccountDetails/AccountDetails.scss";
+import { useSelector } from "react-redux";
+import "./AccountDetails.scss";
 
 const AccountDetails = () => {
+  const { user } = useSelector((state) => state.auth);
+
   return (
     <div className="container">
       <div className="account-details">
@@ -24,7 +27,11 @@ const AccountDetails = () => {
                 <p>Email</p>
               </div>
               <div className="info-content">
-                <input type="text" className="input" />
+                <input
+                  type="text"
+                  className="input"
+                  defaultValue={user.email}
+                />
               </div>
             </div>
             <div className="info-items">

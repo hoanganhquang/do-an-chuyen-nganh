@@ -4,8 +4,13 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "../Dashboard/Dashboard";
 import Orders from "../Orders/Orders";
 import AccountDetails from "../AccountDetails/AccountDetails";
+import { useEffect } from "react";
 
 const ProfilePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container">
       <div className="content">

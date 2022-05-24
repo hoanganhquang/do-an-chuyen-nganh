@@ -35,11 +35,17 @@
           border: 1px solid v.$grey-text-color3;
           border-radius: 10px;
           border-spacing: 0;
+          overflow: hidden;
+
+          thead,
+          tbody tr {
+            display: table;
+            table-layout: fixed;
+          }
 
           thead {
             background-color: v.$primary-color1;
             height: 50px;
-
             tr {
               th {
                 &:nth-child(1) {
@@ -58,6 +64,10 @@
           }
 
           tbody {
+            max-height: 400px;
+            overflow-y: auto;
+            display: block;
+
             tr {
               height: 40px;
               td {
@@ -81,7 +91,6 @@
 
             .table-func {
               text-align: center;
-              width: 30px;
 
               svg {
                 cursor: pointer;

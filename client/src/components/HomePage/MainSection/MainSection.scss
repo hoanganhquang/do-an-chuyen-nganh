@@ -1,5 +1,85 @@
 @use "../../../styles/variables" as v;
 
+.bestSeller {
+  padding-top: 150px;
+
+  .container {
+    .text-box {
+      width: 100%;
+      margin-bottom: 50px;
+      text-align: center;
+
+      h1 {
+        font-weight: 700;
+        font-size: 2.3rem;
+        line-height: 127%;
+        letter-spacing: 0.2px;
+        color: v.$black-text-color1;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: v.$black-text-color1;
+      }
+    }
+
+    .prod-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px 30px;
+      max-height: 1487px;
+
+      .product-item {
+        border-bottom: 0px solid v.$primary-color;
+        transition: all 0.15s linear;
+
+        &:hover {
+          cursor: pointer;
+          border-width: 3px;
+        }
+      }
+
+      .img-box {
+        img {
+          border-radius: 10px;
+        }
+      }
+
+      .product-desc {
+        .title {
+          font-weight: 400;
+          font-size: 1.125rem;
+          line-height: 150%;
+          letter-spacing: -0.0035em;
+          color: v.$black-text-color;
+        }
+
+        .desc {
+          font-weight: 600;
+          font-size: 0.7rem;
+          line-height: 175%;
+          letter-spacing: 0.0112em;
+          text-transform: uppercase;
+          color: v.$grey-text-color2;
+          width: 261px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+
+        .price {
+          font-weight: 400;
+          font-size: 0.938rem;
+          line-height: 180%;
+          letter-spacing: -0.0035em;
+          color: v.$primary-color;
+        }
+      }
+    }
+  }
+}
+
 .main {
   padding: 100px 0;
 

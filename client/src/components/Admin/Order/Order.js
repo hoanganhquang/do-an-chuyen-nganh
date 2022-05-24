@@ -1,42 +1,42 @@
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axios from "axios";
 import clsx from "clsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import DetailsModal from "./DetailsModal";
 import "./Order.scss";
 
 export default function Order() {
+  const { token } = useSelector((state) => state.auth);
   const [showDetailsModal, setShowDetailsModal] = useState(false);
+  const [dataOrder, setDataOrder] = useState([]);
+  const [dataOrderDetail, setDataOrderDetail] = useState([]);
 
   const handleShowDetailsModal = () => {
     setShowDetailsModal(!showDetailsModal);
   };
 
+  useEffect(async () => {
+    try {
+      const res = await axios.get(`${process.env.REACT_APP_API}/order`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      setDataOrder(res.data.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
   return (
     <div className="order">
-      {/* Details modal */}
-      <div className={clsx("modal", "order-modal", { show: showDetailsModal })}>
-        <div className="modal-box">
-          <div className="modal-header">
-            <h1 className="modal-title">Chi tiết đơn hàng</h1>
-            <FontAwesomeIcon icon={faClose} onClick={handleShowDetailsModal} />
-          </div>
-
-          <table>
-            <thead>
-              <tr>
-                <th>Sản phẩm</th>
-                <th>Số lượng</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Dây tây</td>
-                <td>10</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      <DetailsModal
+        showDetailsModal={showDetailsModal}
+        handleShowDetailsModal={handleShowDetailsModal}
+        dataOrderDetail={dataOrderDetail}
+      />
 
       <h1 className="title">Đơn hàng</h1>
 
@@ -50,16 +50,27 @@ export default function Order() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>01/01/2022</td>
-            <td>100.000</td>
-            <td>AAAA AAA AAA</td>
-            <td>
-              <button className="secondaryBtn" onClick={handleShowDetailsModal}>
-                Details
-              </button>
-            </td>
-          </tr>
+          {dataOrder.length > 0 &&
+            dataOrder.map((item) => {
+              return (
+                <tr key={item._id}>
+                  <td>{new Date(item.orderDate).toLocaleDateString("vi")}</td>
+                  <td>{item.total}</td>
+                  <td>{item.userDetail[0].name}</td>
+                  <td>
+                    <button
+                      className="secondaryBtn"
+                      onClick={() => {
+                        setDataOrderDetail(item.details);
+                        handleShowDetailsModal();
+                      }}
+                    >
+                      Details
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
         </tbody>
       </table>
     </div>

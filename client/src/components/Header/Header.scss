@@ -21,9 +21,19 @@ header {
         align-items: center;
         gap: 0 40px;
 
-        .img-box {
-          width: 135px;
-          height: 48px;
+        .logoBox {
+          display: flex;
+          align-items: center;
+          .title {
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 112%;
+            color: v.$primary-color;
+          }
+
+          img {
+            width: 29px;
+          }
         }
 
         .menu {
