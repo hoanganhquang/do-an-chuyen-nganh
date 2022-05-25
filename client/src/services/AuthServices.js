@@ -17,3 +17,13 @@ export const SignUpService = async (url, data) => {
   });
   return res.data.token;
 };
+
+export const getUser = async (token) => {
+  const res = await axios.get(`${process.env.REACT_APP_API}/user/curUser`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+  return res.data;
+};

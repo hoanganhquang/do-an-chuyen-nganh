@@ -1,7 +1,7 @@
 import "./SignUpForm.scss";
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { signUp } from "../../../store/AuthSlice";
+import { signUp } from "../../../store/authSlice";
 import { toast } from "react-toastify";
 
 function SignUpForm() {

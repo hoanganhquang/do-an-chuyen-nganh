@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./SignInForm.scss";
 import { useSelector, useDispatch } from "react-redux";
-import { signIn } from "../../../store/AuthSlice";
+import { signIn } from "../../../store/authSlice";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 

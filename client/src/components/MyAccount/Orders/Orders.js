@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import "../Orders/Orders.scss";
-import { faClose } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import clsx from "clsx";
-import { useState } from "react";
-
-const Orders = () => {
-  const [showDetailsModal, setShowDetailsModal] = useState(false);
-=======
 import "./Orders.scss";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,13 +11,10 @@ const Orders = () => {
   const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [dataOrder, setDataOrder] = useState([]);
   const [dataOrderDetail, setDataOrderDetail] = useState([]);
->>>>>>> tab
 
   const handleShowDetailsModal = () => {
     setShowDetailsModal(!showDetailsModal);
   };
-<<<<<<< HEAD
-=======
 
   useEffect(async () => {
     try {
@@ -48,7 +35,6 @@ const Orders = () => {
     }
   }, []);
 
->>>>>>> tab
   return (
     <div className="container">
       <div
@@ -64,20 +50,11 @@ const Orders = () => {
             <thead>
               <tr>
                 <th>Sản phẩm</th>
-<<<<<<< HEAD
-=======
                 <th>Giá bán</th>
->>>>>>> tab
                 <th>Số lượng</th>
               </tr>
             </thead>
             <tbody>
-<<<<<<< HEAD
-              <tr>
-                <td>Dây tây</td>
-                <td>10</td>
-              </tr>
-=======
               {dataOrderDetail.length > 0 &&
                 dataOrderDetail.map((item) => {
                   return (
@@ -88,7 +65,6 @@ const Orders = () => {
                     </tr>
                   );
                 })}
->>>>>>> tab
             </tbody>
           </table>
         </div>
@@ -101,36 +77,12 @@ const Orders = () => {
           <table>
             <thead>
               <tr className="table-header">
-<<<<<<< HEAD
-                <th>Số thứ tự</th>
-                <th>ID đơn hàng</th>
-                <th>Trạng thái</th>
-=======
                 <th>Ngày đặt</th>
->>>>>>> tab
                 <th>Tổng tiền</th>
                 <th> </th>
               </tr>
             </thead>
             <tbody>
-<<<<<<< HEAD
-              <tr className="table-row">
-                <td>
-                  <p>1</p>
-                </td>
-                <td>#123</td>
-                <td>Đã nhận</td>
-                <td>$ 9999</td>
-                <td>
-                  <button
-                    className="button primaryBtn"
-                    onClick={handleShowDetailsModal}
-                  >
-                    Chi tiết
-                  </button>
-                </td>
-              </tr>
-=======
               {dataOrder.length > 0 &&
                 dataOrder.map((item) => {
                   return (
@@ -156,7 +108,6 @@ const Orders = () => {
                     </tr>
                   );
                 })}
->>>>>>> tab
             </tbody>
           </table>
         </div>

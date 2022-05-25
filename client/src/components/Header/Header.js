@@ -4,8 +4,7 @@ import logo from "../../assets/icons/Logo.svg";
 
 import clsx from "clsx";
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
-import { signOut } from "../../store/AuthSlice";
+import { signOut } from "../../store/authSlice";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
@@ -16,6 +15,7 @@ function Header() {
   const [headerScrollStyle, setHeaderScrollStyle] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const { token, isLogin } = useSelector((state) => state.auth);
 
   useEffect(() => {
     const scrollCheck = () => {
@@ -29,20 +29,20 @@ function Header() {
     };
   }, []);
 
-  useEffect(async () => {
-    try {
-      const res = await axios.get(`${process.env.REACT_APP_API}/cart/`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-      if (res.data.data.products.length > 0) {
-        setCartItemQuan(res.data.data.products.length);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }, [isLoggedin]);
+  // useEffect(async () => {
+  //   try {
+  //     const res = await axios.get(`${process.env.REACT_APP_API}/cart/`, {
+  //       headers: {
+  //         Authorization: `Bearer ${token}`,
+  //       },
+  //     });
+  //     if (res.data.data.products.length > 0) {
+  //       setCartItemQuan(res.data.data.products.length);
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }, [isLogin]);
 
   const handleNavigateCard = () => {
     navigate("/cart");
@@ -82,12 +82,12 @@ function Header() {
               <li className="item" onClick={handleNavigateProductSection}>
                 <a>Sản phẩm</a>
               </li>
-              {user.role == "Admin" && (
+              {/* {user.role == "Admin" && (
                 <li className="item" onClick={handleNavigateDashboardAdmin}>
                   <a>Quản lý</a>
                 </li>
-              )}
-              {isLoggedin && (
+              )} */}
+              {isLogin && (
                 <li className="item" onClick={handleLogOut}>
                   <a href="" style={{ color: "red" }}>
                     Đăng xuất
