@@ -25,5 +25,5 @@ export const getUser = async (token) => {
     },
   });
 
-  return res.data;
+  return res.data.data;
 };

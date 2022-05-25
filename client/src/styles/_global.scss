@@ -5,6 +5,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.App {
+  overflow: hidden;
+}
+
 .wrapper {
   max-width: 1500px;
   margin: 0 auto;

@@ -15,7 +15,7 @@ function Header() {
   const [headerScrollStyle, setHeaderScrollStyle] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { token, isLogin } = useSelector((state) => state.auth);
+  const { token, isLogin, user } = useSelector((state) => state.auth);
 
   useEffect(() => {
     const scrollCheck = () => {
@@ -65,7 +65,7 @@ function Header() {
     dispatch(signOut());
     navigate("/auth");
   };
-
+  console.log(user);
   return (
     <header className={clsx({ scrollShow: headerScrollStyle })}>
       <div className="container">
@@ -82,11 +82,11 @@ function Header() {
               <li className="item" onClick={handleNavigateProductSection}>
                 <a>Sản phẩm</a>
               </li>
-              {/* {user.role == "Admin" && (
+              {user.role == "Admin" && (
                 <li className="item" onClick={handleNavigateDashboardAdmin}>
                   <a>Quản lý</a>
                 </li>
-              )} */}
+              )}
               {isLogin && (
                 <li className="item" onClick={handleLogOut}>
                   <a href="" style={{ color: "red" }}>

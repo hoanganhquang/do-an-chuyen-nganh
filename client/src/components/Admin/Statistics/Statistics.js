@@ -13,9 +13,9 @@ export default function Statistics() {
   const { token } = useSelector((state) => state.auth);
   const [dateValue, setDateValue] = useState(new Date());
   const [dataStatistics, setDataStatistics] = useState({});
+  const [dateType, setDateType] = useState();
 
   const handleChangeDate = (date) => {
-    console.log(new Date(date).toLocaleDateString("vi-VN"));
     setDateValue(date);
   };
 
@@ -24,10 +24,19 @@ export default function Statistics() {
     let date = dateValue.getDate();
     if (month < 10) month = "0" + month;
     if (date < 10) month = "0" + date;
-    const dates = dateValue.getFullYear() + "-" + month + "-" + date;
+    let dates = dateValue.getFullYear() + "-" + month + "-" + date;
+
+    if (dateType == "month") {
+      dates = dateValue.getFullYear() + "-" + month;
+    }
+
+    if (dateType == "year") {
+      dates = dateValue.getFullYear();
+    }
+
     try {
       const res = await axios.get(
-        `${process.env.REACT_APP_API}/statistics?date=${dates}`,
+        `${process.env.REACT_APP_API}/statistics?${dateType}=${dates}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -63,17 +72,24 @@ export default function Statistics() {
     } catch (error) {
       console.log(error);
     }
-  }, []);
+  }, [dateValue]);
 
   return (
     <div className="statistics">
       <h1 className="title">Thống kê</h1>
 
       <div className="calendar-box">
-        <select name="" id="">
-          <option value="">Ngày</option>
-          <option value="">Tháng</option>
-          <option value="">Năm</option>
+        <select
+          name=""
+          id=""
+          onChange={(e) => {
+            setDateType(e.target.value);
+          }}
+        >
+          <option value="">Chọn</option>
+          <option value="date">Ngày</option>
+          <option value="month">Tháng</option>
+          <option value="year">Năm</option>
         </select>
         <DatePicker
           dateFormat="dd/MM/yyyy"

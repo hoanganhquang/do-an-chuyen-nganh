@@ -12,14 +12,16 @@ import Cart from "./components/Cart/Cart";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { getCurrentUser } from "./store/authSlice";
 
 function App() {
+  const { token } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+
   useEffect(() => {
     aos.init({ duration: 1000 });
   }, []);
-
-  const { token } = useSelector((state) => state.auth);
 
   const checkAuthForRender = (component) => {
     if (token) {
@@ -28,6 +30,10 @@ function App() {
       return <AuthPage />;
     }
   };
+
+  useEffect(async () => {
+    dispatch(getCurrentUser(token));
+  }, [token]);
 
   return (
     <div className="App">
@@ -41,10 +47,7 @@ function App() {
             path="/profile-page/*"
             element={checkAuthForRender(<ProfilePage />)}
           />
-          <Route
-            path="/admin/*"
-            element={checkAuthForRender(<ProfilePage />)}
-          />
+          <Route path="/admin/*" element={checkAuthForRender(<Admin />)} />
         </Routes>
         <Footer />
       </div>
